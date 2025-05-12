@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+}
+
+main{
+    background-color: #e8d8c3;
+}
+/*====================NAVBAR====================*/
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: #e8d8c3;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.header__item{
+    display: block;
+    border-width: 2px;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+/*logo i header*/
+li:first-child{
+    display: flex;
+    align-self: center;
+    padding: 5px 20px;
+}
+
+/*====================HERO====================*/
+.hero{
+    width: 100%;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    font-size: 1em;
+    font-family: "Vollkorn";
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    z-index: 1;
+}
+
+/*====================GAVEKURV-SEKTION====================*/
+.gavekurv-sektion {
+    width: 300px;
+    background-color: #e7d5bd;
+    padding: 1.5rem;
+    font-family: "Vollkorn";
+    text-align: center;
+    margin: auto;
+}
+
+.overskrift-gavekurve {
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: "Vollkorn";
+    margin: 0.2rem 0;
+}
+
+.underoverskrift-gavekurve {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.produkt-billede {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.produkt-information .produkt-navn {
+    font-weight: bold;
+    margin: 0;
+}
+
+.produkt-information .gavekurv-pris {
+    font-weight: bold;
+    font-family: "Vollkorn";
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.divider-container {
+    width: 100%;
+    margin: 0;
+}
+
+.divider-billede{
+    width: 100%;
+    height: auto;
+}
+
+/*====================PRODUKT-SEKTION====================*/
+.produkt-wrapper {
+    background-color: #2f3c32; 
+  
+}
+.produkt-sektion {
+    width: 300px;
+    background-color: #2f3c32;
+    padding: 1.5rem;
+    font-family: "Vollkorn";
+    text-align: center;
+    margin: auto;
+}
+
+.overskrift-produkter {
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: "Vollkorn";
+    margin: 0.2rem 0;
+    color: white;
+}
+
+.underoverskrift-produkter {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.produkt-information .produkt-navn {
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.produkt-information .produkt-pris {
+    font-weight: bold;
+    font-family: "Vollkorn";
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+/*====================NYHEDSBREV====================*/
+.nyhedsbrev{
+    width: 100%;
+}
+
+.nyhedsbrev-container {
+    position: relative;
+    width: 100%;
+}
+
+.nyhedsbrev-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    font-size: 1em;
+    font-family: "Vollkorn";
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    z-index: 1;
+}
+
+.signup-form {
+    display: flex;
+    max-width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  
+  .signup-form input[type="email"] {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    z-index: 2;
+  }
+  
+  .signup-form button {
+    background-color: #b14d32;
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 0.75rem;
+    margin-top: 0.3rem;
+    transform: scale(1.2);
+  }
+  
+  .checkbox-text {
+    color: #ffffff;
+   
+  }
