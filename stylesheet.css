@@ -1,5 +1,6 @@
 *{
     margin: 0px;
+    font-family: "Vollkorn";
 }
 
 main{
@@ -206,6 +207,7 @@ li:first-child{
     max-width: 600px;
     margin: auto;
     padding: 1rem;
+    font-family: "Vollkorn";
   }
 
   .signup-form {
