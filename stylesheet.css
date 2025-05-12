@@ -112,13 +112,11 @@ li:first-child{
 .divider-container {
     width: 100%;
     margin: 0;
-    margin-bottom: 0;
 }
 
 .divider-billede{
     width: 100%;
     height: auto;
-    margin-bottom: 0;
 }
 
 /*====================PRODUKT-SEKTION====================*/
@@ -238,6 +236,12 @@ li:first-child{
     z-index: 2;
   }
 
+  .underoverskrift-omos {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
   .samarbejdspartnere-sektion {
     display: flex;
     justify-content: space-around;
@@ -249,3 +253,5 @@ li:first-child{
     width: 100px;          
     height: auto;
   }
+
+  
