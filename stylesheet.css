@@ -1,5 +1,6 @@
 *{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     font-family: "Vollkorn";
 }
 
@@ -7,12 +8,33 @@ main{
     background-color: #e7d5bd;
 }
 /*====================NAVBAR====================*/
-.header{
+/*.header{
     display: flex;
     flex-direction: column;
     background-color: #e7d5bd;
     color: white;
+}*/
+
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background: transparent;
 }
+
+.mobile-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-logo {
+    margin-right: auto;
+}
+/*
+.mobile-nav li {
+    float: left;
+    display: block;
+}*/
 
 ul{
     list-style-type: none;
@@ -30,10 +52,16 @@ ul{
     text-decoration: none;
 }
 
+
+
+.fa-search, .fa-shopping-cart, .fa-bars {
+    color: #E8D8C3;
+  }
+
 /*logo i header*/
 li:first-child{
-    display: flex;
-    align-self: center;
+    /*display: flex;
+    align-self: center;*/
     padding: 5px 20px;
 }
 
