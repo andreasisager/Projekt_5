@@ -4,3 +4,4 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     $("#footer-inject").load("footer.html");
 });
+    
