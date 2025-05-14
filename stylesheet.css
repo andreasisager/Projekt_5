@@ -27,16 +27,20 @@ body {
     background: transparent;*/
     z-index: 2;
     position: fixed;
+    width: 100%;
 }
 
 .mobile-nav {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
 }
 
 .header-logo {
     margin-right: auto;
+    padding: 10px;
+    /*display: block;
+    width: 100px;
+    height: 100px;*/
 }
 /*
 .mobile-nav li {
@@ -52,13 +56,13 @@ ul{
     text-align: center;
     font-size: 1.5em;
 }
-
+/*
 .header__item{
     display: block;
     border-width: 2px;
     padding: 18px 20px;
     text-decoration: none;
-}
+}*/
 
 
 
@@ -67,27 +71,16 @@ ul{
     margin: 30px;
   }
 
-/*logo i header*/
-li:first-child{
-    /*display: flex;
-    align-self: center;*/
-    padding: 5px 20px;
-}
+
 
 /*====================HERO====================*/
 .hero{
-    width: 100%;
-    /*z-index: -1;
-    object-fit: cover;
-    top: 0;
-    left: 0;*/
-    
+    width: 100%;    
 }
 
 .hero-container {
     position: relative;
     width: 100%;
-    
 }
 
 .hero-text {
@@ -345,7 +338,6 @@ li:first-child{
 
 .fa {
     font-size: 30px;
-    width: 30px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -359,18 +351,21 @@ li:first-child{
     background: #000000;
     color: white;
     padding: 20px;
+    width: 30px;
   }
   
   .fa-instagram {
     background: #000000;
     color: white;
     padding: 20px;
+    width: 30px;
   }
 
   .fa-linkedin {
     background: #000000;
     color: white;
     padding: 20px;
+    width: 30px;
   }
 
 /*====================MEDIA QUERY====================*/
