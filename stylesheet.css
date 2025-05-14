@@ -373,6 +373,88 @@ li:first-child{
     padding: 20px;
   }
 
+/*====================SPECIFIK PRODUKT-SIDE====================*/
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 10px;
+  }
+
+  ul.breadcrumb li+li:before {
+    padding: 4px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  ul.breadcrumb li a:hover {
+    color: #ffffff;
+  }
+
+  .underoverskrift-specifikprodukt {
+    color: #000000;
+    margin-bottom: 1.5rem;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.content-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .gavekurv-sektion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .variants {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .variant {
+    padding: 10px 15px;
+    border: 1px solid #333;
+    background-color: #e6dccb;
+    cursor: pointer;
+  }
+  
+  .variant.selected {
+    background-color: #2f3b2f;
+    color: white;
+  }
+  
+  input[type="number"] {
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .tilfoejtilkurv {
+    margin-top: 10px;
+    padding: 15px;
+    width: 100%;
+    background-color: #b55135;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
 /*====================MEDIA QUERY====================*/
 @media only screen and (min-width: 1024px){
 
