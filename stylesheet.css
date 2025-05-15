@@ -504,7 +504,12 @@ ul{
     text-align: left;
   }
 
-<<<<<<< Updated upstream
+  .produkt-information-minddre{
+    background-color: #2f3c32;
+      
+  }
+  
+
   /*====================KONTAKT-SIDE====================*/
   .kontakt-billede {
     width: 100%;
@@ -512,13 +517,6 @@ ul{
     border-radius: 4px;
     margin-bottom: 1rem;
 }
-=======
-  .produkt-information-minddre{
-    
-  }
-
-
->>>>>>> Stashed changes
 
 /*====================MEDIA QUERY====================*/
 @media only screen and (min-width: 1024px){
