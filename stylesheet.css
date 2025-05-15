@@ -393,7 +393,6 @@ h3{
     color: #000000;
     margin-bottom: 1.5rem;
     padding-top: 20px;
-    text-align: left;
 }
 
 .page-wrapper {
@@ -411,6 +410,7 @@ h3{
     font-family: "Vollkorn";
     text-align: center;
     margin: auto;
+    text-align: left;
   }
   
   .container {
@@ -518,7 +518,7 @@ h3{
 h3{
   font-weight: bold;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .gavekurv-pris {
@@ -585,6 +585,10 @@ h3{
     height: auto;
 }
 
+.fragt{
+  display: flex;
+  justify-content: center;
+}
 /*====================NYHEDSBREV====================*/
 .nyhedsbrev-text {
     position: relative;
