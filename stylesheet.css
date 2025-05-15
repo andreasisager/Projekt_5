@@ -420,6 +420,13 @@ ul{
     margin: auto;
     text-align: left;
   }
+
+  .produkt-billede {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
   
   .container {
     display: flex;
@@ -574,7 +581,7 @@ h3{
 }
 
 .produkt-billede {
-    width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 4px;
     margin-bottom: 1rem;
@@ -662,6 +669,8 @@ h3{
     width: 100%;
     height: auto;
   }
+
+
 
   /*====================FOOTER====================*/
     .footer {
