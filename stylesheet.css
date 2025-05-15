@@ -474,6 +474,21 @@ ul{
     font-family: 'Nunito';
     font-size: 15px;
     padding: 20px;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+  }
+  .specifikprodukt-sektion-mindre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    background-color: #E8D8C3;
+    padding: 1.5rem;
+    font-family: "Vollkorn";
+    text-align: center;
+    margin: auto;
+    text-align: left;
   }
 
 /*====================MEDIA QUERY====================*/
