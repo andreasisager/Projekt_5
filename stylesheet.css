@@ -353,7 +353,7 @@ ul{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .fa {
@@ -372,7 +372,7 @@ ul{
   
   .fa-facebook {
     border-color: #000000;
-    border: solid;
+    border: solid 2px;
     color: rgb(0, 0, 0);
     padding: 15px;
     width: 15px;
@@ -381,7 +381,7 @@ ul{
   
   .fa-instagram {
     border-color: #000000;
-    border: solid;
+    border: solid 2px;
     color: rgb(0, 0, 0);
     padding: 15px;
     width: 15x;
@@ -389,7 +389,7 @@ ul{
 
   .fa-linkedin {
     border-color: #000000;
-    border: solid;
+    border: solid 2px;
     color: rgb(0, 0, 0);
     padding: 15px;
     width: 15px;
