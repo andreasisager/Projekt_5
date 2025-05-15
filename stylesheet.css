@@ -7,6 +7,19 @@
 main{
     background-color: #E8D8C3;
 }
+
+
+p{
+  font-family: 'Nunito';
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h2{
+  font-family: "Vollkorn";
+  font-size: 24px;
+  font-weight: 600;
+}
 /*
 body {
     position: relative;
@@ -138,14 +151,8 @@ ul{
     margin-bottom: 1rem;
 }
 
-h3{
-  font-weight: bold;
-    margin: 0;
-}
-
 .gavekurv-pris {
     font-weight: bold;
-    font-family: "Vollkorn";
     font-size: 1.2rem;
     margin-top: 0.5rem;
 }
@@ -393,6 +400,7 @@ h3{
     color: #000000;
     margin-bottom: 1.5rem;
     padding-top: 20px;
+    font-size: 20px;
 }
 
 .page-wrapper {
@@ -431,13 +439,17 @@ h3{
     border: 1px solid #333;
     background-color: #e6dccb;
     cursor: pointer;
+    font-family:'Nunito';
   }
   
   .variant.selected {
     background-color: #2f3b2f;
     color: white;
   }
-  
+  .amount{
+    font-family: 'Nunito';
+  }
+
   input[type="number"] {
     width: 60px;
     padding: 10px;
@@ -454,6 +466,14 @@ h3{
     font-size: 16px;
     border: none;
     cursor: pointer;
+  }
+
+  .frifragt{
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito';
+    font-size: 15px;
+    padding: 20px;
   }
 
 /*====================MEDIA QUERY====================*/
