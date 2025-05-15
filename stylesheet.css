@@ -138,12 +138,12 @@ ul{
     margin-bottom: 1rem;
 }
 
-.produkt-information .gavekurv-navn {
-    font-weight: bold;
+h3{
+  font-weight: bold;
     margin: 0;
 }
 
-.produkt-information .gavekurv-pris {
+.gavekurv-pris {
     font-weight: bold;
     font-family: "Vollkorn";
     font-size: 1.2rem;
@@ -509,13 +509,19 @@ ul{
     font-size: 2rem;
 }
 
-.produkt-information .gavekurv-navn {
+.gavekurv-navn {
     font-weight: bold;
     margin: 0;
     font-size: 1.5rem;
 }
 
-.produkt-information .gavekurv-pris {
+h3{
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.gavekurv-pris {
     font-weight:100;
     font-family: "Vollkorn";
     font-size: 1.5rem;
