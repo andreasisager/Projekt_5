@@ -26,6 +26,12 @@ h3{
   font-size: 24px;
   font-weight: 600;
 }
+
+h4{
+  font-family: "Vollkorn";
+  font-size: 20px;
+  font-weight: 600;
+}
 /*
 body {
     position: relative;
@@ -505,10 +511,21 @@ ul{
   }
 
   .produkt-information-mindre{
-    background-color: #ff009d;
+    font-family: 'Nunito';
     font-size: 12px;
   }
+
+  .gavekurv-pris-mindre {
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
   
+  .anbefaldedeprodukterpadding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
 
   /*====================KONTAKT-SIDE====================*/
   .kontakt-billede {
