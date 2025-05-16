@@ -72,6 +72,11 @@ body {
     flex-direction: row;
 }
 
+.desktop-navbar {
+  display: none;
+}
+
+
 .header-logo {
     margin-right: auto;
     padding: 10px;
@@ -568,8 +573,14 @@ ul.breadcrumb li {
   /*====================NAV====================*/
 
 
+  .mobile-nav {
+      display: none;
+  }
 
-  
+  .desktop-navbar {
+      display: initial;
+  }
+
 
   /*====================HERO====================*/
   .hero-text {
