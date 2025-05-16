@@ -398,10 +398,6 @@ ul{
 
 /*====================SPECIFIK PRODUKT-SIDE====================*/
 
-ul{
-  background-color: #2f3b2f;
-}
-
 ul.breadcrumb li {
     display: inline;
     font-size: 10px;
