@@ -7,7 +7,6 @@ main{
     background-color: #f0e5d7;
 }
 
-
 p{
   font-family: 'Nunito';
   font-size: 16px;
@@ -542,7 +541,12 @@ ul.breadcrumb li {
 
 
 
-
+  .anbefaldedeprodukterpadding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -810,6 +814,7 @@ ul.breadcrumb li {
 
     .align-mindreprodukter{
       display: flex;
+      padding-left: 100px;
     }
     
     .specifikprodukt-sektion {
@@ -904,6 +909,7 @@ ul.breadcrumb li {
     .anbefaldedeprodukterpadding{
       padding-top: 20px;
       padding-bottom: 20px;
+      padding-left: 100px;
     }
     
 
