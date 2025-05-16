@@ -402,6 +402,7 @@ ul.breadcrumb li {
     display: inline;
     font-size: 10px;
     background-color: #c4492c;
+    text-align: left;
   }
 
   ul.breadcrumb li+li:before {
@@ -749,8 +750,8 @@ h3{
 
   /*====================SPECIFIK PRODUKT-SIDE====================*/
 
-  ul{
-    background-color: aqua;
+  .breadcrumb{
+    text-align: left;
   }
 
   ul.breadcrumb li {
