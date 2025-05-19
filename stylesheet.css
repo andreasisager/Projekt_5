@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
-
 }
 
 main{
@@ -62,13 +61,19 @@ body {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+#navbar {
+  z-index: 2;
+    position: fixed;
+    background-color: #56715C;
+}
+
 nav {
   width: 100%;
 }
 
 .transition {
   background-color: #56715C;
-  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 nav a {
@@ -165,9 +170,9 @@ ul{
 }
 
 .overskrift-gavekurve {
-    margin: 0.2rem 0;
     display: flex;
     justify-content: center;
+    padding-top: 50px;
 }
 
 .underoverskrift-gavekurve {
@@ -193,42 +198,39 @@ ul{
 
 .divider-container {
     width: 100%;
-    margin: 0;
 }
 
 .divider-billede{
     width: 100%;
-    height: auto;
+    display: block;
 }
 
 /*====================PRODUKTSEKTION====================*/
 .produkt-wrapper {
-    background-color: #2f3c32; 
-    margin-top: -15px;
+    background-color: #2f3c32;
 }
 .produkt-sektion {
-    width: 300px;
+    /*width: 300px;*/
     background-color: #2f3c32;
     padding: 1.5rem;
     text-align: center;
-    margin: auto;
+    /*margin: auto;*/
 }
 
 .overskrift-produkter {
     font-size: 1.8rem; /*28.8px*/
     font-weight: 800;
-    margin: 0.2rem 0;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10px;
+    padding-top: 50px;
 }
-
+/*
 .underoverskrift-produkter {
     color: white;
     margin-bottom: 1.5rem;
-}
+}*/
 
 .slideshowsection{
     height: auto;
@@ -287,7 +289,7 @@ ul{
   border-radius: 4px;
 }
 
-.knap{
+.produkt-sektion-knap{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -300,8 +302,8 @@ ul{
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
+  margin-bottom: 50px;
+  transition-duration: 0.3s;
   cursor: pointer;
   background-color: #C4492C; 
   color: white; 
@@ -321,8 +323,7 @@ ul{
 
 .nyhedsbrev-container {
     position: relative;
-    width: 100%;
-    height: 300px; 
+    /*width: 100%;*/
     overflow: hidden;
   }
   
@@ -330,13 +331,8 @@ ul{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    /*width: 100%;*/
     z-index: 0;
-  }
-  
-  .nyhedsbrev {
-    width: 100%;
-    height: 100%;
   }
   
   .nyhedsbrev-text {
@@ -346,7 +342,6 @@ ul{
     max-width: 600px;
     margin: auto;
     padding: 3rem;
-    font-family: "Vollkorn";
   }
 
   .signup-form {
@@ -374,6 +369,11 @@ ul{
     font-weight: bold;
   }
 
+  .signup-form button:hover {
+    background-color: #85321E;
+    transition-duration: 0.3s;
+  }
+
   /*====================OM OS-SEKTION====================*/
   .divider-container_lisbeth {
     width: 100%;
@@ -385,9 +385,8 @@ ul{
 }
 
 .overskrift-omos {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /*28.8px*/
     font-weight: 800;
-    font-family: "Vollkorn";
     margin: 0.2rem 0;
     display: flex;
     justify-content: center;
@@ -457,6 +456,7 @@ ul{
     justify-content: center;
     flex-wrap: wrap;
     gap: 1em;
+    padding-bottom: 25px;
   }
   
   .footer-vilkaar p {
@@ -696,7 +696,7 @@ a{
 /*========== KATEGORI WEBSHOP ==========*/
 
 .webshop{
-  margin: 200px auto auto auto;
+  margin: 50px auto auto auto;
 
 }
 
@@ -736,13 +736,13 @@ a{
   font-size: 1.375rem;
   font-weight: 600;
   color: #000;
-  margin-top: 20px;
+  padding: 20px 0px;
 }
 
 /*========== PRODUKT WEBSHOP ==========*/
 
 .webshop{
-  margin: 200px auto auto auto;
+  margin: 50px auto auto auto;
 
 }
 
@@ -928,6 +928,35 @@ font-family: 'Nunito';
 @media only screen and (min-width: 1024px){
 
 
+p{
+  font-family: 'Nunito';
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Vollkorn";
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Vollkorn";
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Vollkorn";
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: "Vollkorn";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 
 
   /*====================NAV====================*/
@@ -949,7 +978,7 @@ font-family: 'Nunito';
 
   .header-menu {
     display: flex;
-    justify-content: center;
+    justify-content: center;    
   }
 
   .header-icons {
@@ -958,21 +987,65 @@ font-family: 'Nunito';
   }
 
   .menu-item {
-    margin: 20px;
-    font-size: 0.75em;
+    padding: 20px;
   }
 
-  .desktop-navbar a {
+  .menu-item {
     color: #EBEBEB;
   }
+
+  .arrow {
+  border: solid #EBEBEB;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 2px;
+}
+
+  .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); 
+}
+
+
+.menu-dropdown-items {
+  display: none;
+  position: absolute; 
+  background-color: #F0E5D7;
+  color: #000000;
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  margin-top: 20px;
+} 
+
+
+.menu-item:hover .menu-dropdown-items {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.dropdown-overskrift {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.dropdown-underlink {
+  text-align: left;
+  padding: 10px;
+}
 
 
   /*====================HERO====================*/
   .hero-text {
           text-align: center;
-          font-size: 3em;
   }
-  /*====================GAVEKURV====================*/
+
+  .hero-text h1 {
+          font-size: 6rem;
+  }
+
+  /*====================GAVEKURV====================*/  /*------------pris og navn er byttet om på mobil og desktop ------------*/
   .storgavekurv{
       display: flex;
       flex-direction: row;
@@ -987,7 +1060,6 @@ font-family: 'Nunito';
       width: 300px;
       background-color: #F0E5D7;
       padding: 1.5rem;
-      font-family: "Vollkorn";
       text-align: center;
       margin: auto;
       
@@ -1001,9 +1073,8 @@ font-family: 'Nunito';
   }
 
   .overskrift-gavekurve {
-      font-size: 3rem;
+      font-size: 3rem; /*48px*/
       font-weight: 800;
-      font-family: "Vollkorn";
       margin: 0.2rem 0;
       display: flex;
       justify-content: center;
@@ -1014,20 +1085,15 @@ font-family: 'Nunito';
       margin-bottom: 1.5rem;
       display: flex;
       justify-content: center;
-      font-size: 2rem;
+      font-size: 2rem; /*32px*/
   }
 
   .gavekurv-navn {
       font-weight: bold;
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.5rem; /*24px*/
   }
 
-  h3{
-    font-weight: bold;
-    margin: 0;
-    font-size: 2rem;
-  }
 
   .gavekurv-pris {
       font-weight:100;
@@ -1057,7 +1123,6 @@ font-family: 'Nunito';
       font-size: 3rem;
       font-weight: 800;
       font-family: "Vollkorn";
-      margin: 0.2rem 0;
       color: white;
   }
 
@@ -1074,7 +1139,7 @@ font-family: 'Nunito';
       color: white;
   }
 
-  .produkt-information .produkt-pris {
+  .produkt-information .produkt-pris {  
       font-weight: bold;
       font-family: "Vollkorn";
       font-size: 1.2rem;
@@ -1084,12 +1149,11 @@ font-family: 'Nunito';
 
   .divider-container {
       width: 100%;
-      margin: 0;
   }
 
   .divider-billede{
       width: 100%;
-      height: 300px;
+      display: block;
   }
 
   .fragt{
@@ -1097,29 +1161,10 @@ font-family: 'Nunito';
     justify-content: center;
   }
 
-  .seudvalgknap {
-    font-family: "Nunito";
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: #C4492C; 
-    color: white; 
-    border: 2px solid #C4492C;
-  }
   /*====================NYHEDSBREV====================*/
+ 
   .nyhedsbrev-text {
-      position: relative;
-      text-align: center;
-      color: white;
-      max-width: 600px;
-      margin: auto;
       padding: 4rem;
-      font-family: "Vollkorn";
     }
 
   /*====================OM-OSSEKTION====================*/
