@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 main{
@@ -622,18 +623,310 @@ ul.breadcrumb li {
 
 
 
-  /*====================KONTAKT-SIDE====================*/
+/*====================KONTAKT-SIDE====================*/
   .kontakt-billede {
     width: 300px;
     height: 300px;
     border-radius: 4px;
     margin-bottom: 1rem;
-}
+  }
 
 .page-wrapper_kontakt {
   display: flex;
   flex-direction: column;
 }
+
+/*==================== VINCENT ====================*/
+
+html{
+  font-size: 16px;
+}
+p{
+  font-family: 'Nunito';
+}
+
+body{
+  color: #000;
+}
+
+a{
+  color: #000;
+}
+
+.header__webshop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 9%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo{
+  font-size: 24px;
+  color: red;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#kurv__ikon {
+  position: relative;
+  display: flex;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.kurv__produkt__taeller{
+  position: absolute;
+  top: 0;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border-radius: 10px;
+  font-size: 12px;
+  color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+/*========== KATEGORI WEBSHOP ==========*/
+
+.webshop{
+  margin: 200px auto auto auto;
+
+}
+
+.webshop__titel{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.kategori__indhold {
+  display: flex;
+  gap: 10px; 
+  margin: auto 20px;
+}
+
+.kategori__indhold--beskrivelse{
+  margin: 20px 20px 50px 20px;
+}
+
+.produkt__link{
+  text-decoration: none;
+}
+
+.kategori__kort {
+  text-align: center;
+  background-color: #c2c2c2;
+  border: solid #c2c2c2 2px;
+}
+
+.kategori__billede img{
+  width: 100%;
+  height: auto;
+}
+
+.kategori__navn{
+  font-family: 'Nunito';
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 20px;
+}
+
+/*========== PRODUKT WEBSHOP ==========*/
+
+.webshop{
+  margin: 200px auto auto auto;
+
+}
+
+.webshop__titel{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.produkt__indhold--align{
+  display: flex;
+  flex-direction: row;
+}
+
+.produkt__indhold {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  margin: auto 20px;
+}
+
+.produkt__indhold--beskrivelse{
+  margin: 20px 20px 50px 20px;
+}
+
+.produkt__link{
+  text-decoration: none;
+}
+
+.produkt__kort{
+  margin: 10px;
+}
+
+.produkt__billede img{
+  width: 100%;
+  height: auto;
+}
+
+.produkt__navn{
+  font-family: 'Nunito';
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.produkt__pris{
+font-family: 'Nunito';
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.produkt__pris--kurv .tilfoej__kurv{
+  background: orange;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*========== PRODUKT KURV ==========*/
+
+.kurv{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 360px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 65px 20px 40px;
+  z-index: 100;
+  overflow: auto;
+  transition: 0,5s;
+}
+
+.kurv.aktiv{
+  right: 0;
+}
+
+.kurv__titel{
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.kurv__produkt{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.kurv__produktoplysninger{
+  display: grid;
+  gap: 8px;
+  margin-right: auto;
+}
+
+.kurv__produktbillede{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.kurv__produkt__titel{
+  font-size: 16px;
+  line-height: 1;
+}
+
+.kurv__pris{
+  font-weight: 400;
+}
+
+.kurv__taeller{
+  display: flex;
+  width: 100px;
+  border: 1px solid #777;
+  border-radius: 6px;
+}
+
+.kurv__taeller button{
+  background: transparent;
+  width: 30px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.kurv__taeller #minus{
+  color: #ff0000;
+}
+
+.kurv__taeller__tal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  border-left: 1px solid #777;
+  border-right: 1px solid #777;
+  cursor: default;
+}
+
+.fjern__produkt{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.i__alt{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 1px solid #777;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.i__alt__total{
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.naeste__knap{
+  display: block;
+  padding: 10px 20px;
+  background: #777;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+  margin: 20px auto 0;
+  cursor: pointer;
+}
+
+#luk__kurv{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
 
 /*====================MEDIA QUERY====================*/
 @media only screen and (min-width: 1024px){
@@ -1014,6 +1307,36 @@ ul.breadcrumb li {
       padding-bottom: 20px;
       padding-left: 100px;
     }
-    
+  
+  /*============ VINCENT ======================*/
+    /*========== PRODUKT WEBSHOP ==========*/
+
+    .produkt__indhold__full{
+      display: flex;
+      flex-direction: row;
+  }
+
+
+  .produkt__navn{
+      font-family: 'Nunito';
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 20px;
+  }
+  
+  .produkt__pris__kurv{
+      font-family: 'Nunito';
+      font-size: 0.9rem;
+      font-weight: 600;
+  }
+
+  .produkt__pris--kurv .tilfoej__kurv{
+      padding: 10;
+      background: orange;
+      border-radius: 6px;
+      font-size: 20px;
+      color: #fff;
+      cursor: pointer;
+  }
 
   }
