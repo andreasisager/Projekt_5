@@ -23,7 +23,7 @@ h1 {
 h2 {
   font-family: "Vollkorn";
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h3 {
@@ -141,8 +141,6 @@ ul{
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    font-size: 1em;
-    font-family: "Vollkorn";
 }
 
 /*====================GAVEKURV-SEKTION====================*/
@@ -161,15 +159,11 @@ ul{
     width: 300px;
     background-color: #F0E5D7;
     padding: 1.5rem;
-    font-family: "Vollkorn";
     text-align: center;
     margin: auto;
 }
 
 .overskrift-gavekurve {
-    font-size: 1.8rem;
-    font-weight: 800;
-    font-family: "Vollkorn";
     margin: 0.2rem 0;
     display: flex;
     justify-content: center;
@@ -192,7 +186,7 @@ ul{
 
 .gavekurv-pris {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /*19.2px*/
     margin-top: 0.5rem;
 }
 
@@ -215,15 +209,13 @@ ul{
     width: 300px;
     background-color: #2f3c32;
     padding: 1.5rem;
-    font-family: "Vollkorn";
     text-align: center;
     margin: auto;
 }
 
 .overskrift-produkter {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /*28.8px*/
     font-weight: 800;
-    font-family: "Vollkorn";
     margin: 0.2rem 0;
     color: white;
     display: flex;
