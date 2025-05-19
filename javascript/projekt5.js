@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     $("#productcard").load("productcard.html");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    $("#slideshow").load("slideshow.html");
+});
     
 
 const nav = document.getElementById('home-navbar');

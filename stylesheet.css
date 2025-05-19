@@ -219,19 +219,16 @@ ul{
     margin: auto;
 }
 
-.produkt-billede {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
 .overskrift-produkter {
     font-size: 1.8rem;
     font-weight: 800;
     font-family: "Vollkorn";
     margin: 0.2rem 0;
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .underoverskrift-produkter {
@@ -251,6 +248,63 @@ ul{
     font-size: 1.2rem;
     margin-top: 0.5rem;
     color: white;
+}
+
+.slideshowsection{
+    height: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #2F3C32;
+}
+
+  .slideshow-wrapper {
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative; 
+    margin: 0; 
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #ffffff;
+    background-color: #2F3C32;
+    font-weight:bold;
+    font-size: 22px;
+    border-radius: 1000px;
+    user-select: none;
+    transition: 0.1s;
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+/*
+.stortbillede{
+    object-fit: contain;
+    height: 600px;
+    width: 800px;
+}
+*/
+.stortbillede{
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  
 }
 
 /*====================NYHEDSBREV====================*/
