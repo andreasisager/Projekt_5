@@ -1101,6 +1101,21 @@ font-family: 'Nunito';
     display: flex;
     justify-content: center;
   }
+
+  .seudvalgknap {
+    font-family: "Nunito";
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #C4492C; 
+    color: white; 
+    border: 2px solid #C4492C;
+  }
   /*====================NYHEDSBREV====================*/
   .nyhedsbrev-text {
       position: relative;
