@@ -25,5 +25,5 @@ window.addEventListener('scroll', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    $("#script").load("webshop.html");
+    $("#produktwebshop").load("produktwebshop.html");
 });
