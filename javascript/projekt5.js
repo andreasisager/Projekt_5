@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    $("").load("navbar.html");
+    $("#navbar").load("navbar.html");
 });
 document.addEventListener("DOMContentLoaded", function () {
     $("#footer-inject").load("footer.html");
@@ -25,5 +25,5 @@ window.addEventListener('scroll', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    $("#script").load("webshop.html");
+    $("#produktwebshop").load("produktwebshop.html");
 });
