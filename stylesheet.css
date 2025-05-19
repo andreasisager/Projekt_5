@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
-    box-sizing: border-box;
+
 }
 
 main{
@@ -409,32 +409,53 @@ ul{
   }
 
   /*====================FOOTER====================*/
-.footer {
+   .footer {
     background-color: #F0E5D7;
     color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1.5em;
-    font-family: "Vollkorn"
-}
-
-.footer-links{
-    padding: 1em;
-}
-
-.footer-socials{
-    background-color: #F0E5D7;
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     font-size: 1.2em;
-}
-
-.fa {
+    font-family: "Vollkorn";
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  
+  .footer-column {
+    margin-bottom: 1em;
+  }
+  
+  .footer-links_overskrift {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .footer-links {
+    margin: 0.2em 0;
+  }
+  
+  .footer-socials {
+    background-color: #F0E5D7;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1em 0;
+  }
+  
+  .footer-vilkaar {
+    background-color: #F0E5D7;
+    text-align: center;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  
+  .footer-vilkaar p {
+    margin: 0;
+  }
+  
+  .fa {
     font-size: 30px;
     text-align: center;
     text-decoration: none;
@@ -444,39 +465,24 @@ ul{
   .footer-socials .fa:hover {
     color: #ffffff;
     background-color: #000000;
-    border-color: #000000;
     opacity: 0.7;
   }
   
-  .fa-facebook {
-    border-color: #000000;
-    border: solid 2px;
-    color: rgb(0, 0, 0);
+  .fa-facebook,
+  .fa-instagram,
+  .fa-linkedin {
+    border: solid 2px #000000;
+    color: #000000;
     padding: 15px;
     width: 15px;
     height: 15px;
     margin: 5px;
-  }
-  
-  .fa-instagram {
-    border-color: #000000;
-    border: solid 2px;
-    color: rgb(0, 0, 0);
-    padding: 15px;
-    width: 15x;
-    height: 15px;
-    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .fa-linkedin {
-    border-color: #000000;
-    border: solid 2px;
-    color: rgb(0, 0, 0);
-    padding: 15px;
-    width: 15px;
-    height: 15px;
-    margin: 5px;
-  }
+
 
 /*====================SPECIFIK PRODUKT-SIDE====================*/
 
@@ -682,7 +688,7 @@ a{
 /*========== KATEGORI WEBSHOP ==========*/
 
 .webshop{
-  margin: 200px auto auto auto;
+  margin: 50px auto auto auto;
 
 }
 
@@ -722,13 +728,13 @@ a{
   font-size: 1.375rem;
   font-weight: 600;
   color: #000;
-  margin-top: 20px;
+  padding: 20px 0px;
 }
 
 /*========== PRODUKT WEBSHOP ==========*/
 
 .webshop{
-  margin: 200px auto auto auto;
+  margin: 50px auto auto auto;
 
 }
 
@@ -1181,15 +1187,16 @@ font-family: 'Nunito';
 
     /*====================FOOTER====================*/
     .footer {
-    background-color: #F0E5D7;
-      color: #000000;
-      display: flex;
-      justify-content:space-evenly;
-      flex-direction: row;
-      font-size: 1.5em;
-      flex-wrap: wrap;
-      font-family: "Vollkorn"
-    }
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .footer-column {
+    min-width: 200px;
+  }
+
 
     /*====================SPECIFIK PRODUKT-SIDE====================*/
 
