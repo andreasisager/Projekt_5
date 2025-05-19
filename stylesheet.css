@@ -236,20 +236,6 @@ ul{
     margin-bottom: 1.5rem;
 }
 
-.produkt-information .produkt-navn {
-    font-weight: bold;
-    margin: 0;
-    color: white;
-}
-
-.produkt-information .produkt-pris {
-    font-weight: bold;
-    font-family: "Vollkorn";
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    color: white;
-}
-
 .slideshowsection{
     height: auto;
     padding-top: 75px;
@@ -304,7 +290,32 @@ ul{
   width: 100%;
   height: auto;
   border-radius: 4px;
-  
+}
+
+.knap{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.seudvalgknap {
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #C4492C; 
+  color: white; 
+  border: 2px solid #C4492C;
+}
+
+.seudvalgknap:hover {
+  background-color: #85321E;
+  border: 2px solid #85321E;
+  color: white;
 }
 
 /*====================NYHEDSBREV====================*/
@@ -738,7 +749,7 @@ ul.breadcrumb li {
 
   /*====================PRODUKTSEKTION====================*/
   .produkt-sektion {
-      width: 100%;
+      width: 600px;
       background-color: #2f3c32;
       padding: 1.5rem;
       font-family: "Vollkorn";
