@@ -690,7 +690,7 @@ a{
 /*========== KATEGORI WEBSHOP ==========*/
 
 .webshop{
-  margin: 200px auto auto auto;
+  margin: 50px auto auto auto;
 
 }
 
@@ -730,13 +730,13 @@ a{
   font-size: 1.375rem;
   font-weight: 600;
   color: #000;
-  margin-top: 20px;
+  padding: 20px 0px;
 }
 
 /*========== PRODUKT WEBSHOP ==========*/
 
 .webshop{
-  margin: 200px auto auto auto;
+  margin: 50px auto auto auto;
 
 }
 
