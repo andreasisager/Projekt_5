@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $("#slideshow").load("slideshow.html");
 });
     
-
+/*Inspireret af...*/
 const nav = document.getElementById('home-navbar');
 window.addEventListener('scroll', function() {
     if (window.scrollY > 50) {
@@ -27,3 +27,4 @@ window.addEventListener('scroll', function() {
 document.addEventListener("DOMContentLoaded", function () {
     $("#produktwebshop").load("produktwebshop.html");
 });
+
