@@ -7,7 +7,7 @@ function nySlide(n) {
 
 function visBilleder(n) {
   let i;
-  let slides = document.getElementsByClassName("stortbillede");
+  let slides = document.getElementsByClassName("produktslideshow");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
