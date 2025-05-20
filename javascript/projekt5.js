@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    $("#productcard").load("productcard.html");
+    $("#sammensaetselvgavekurv").load("sammensetselvgavekurv.html");
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -24,7 +24,4 @@ window.addEventListener('scroll', function() {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    $("#produktwebshop").load("produktwebshop.html");
-});
 

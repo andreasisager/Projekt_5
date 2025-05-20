@@ -692,66 +692,58 @@ a{
   visibility: hidden;
 }
 
-/*========== KATEGORI WEBSHOP ==========*/
 
-.webshop{
-  margin: 50px auto auto auto;
+
+/*============= BYG SELV GAVEKURV =============*/
+
+#kurv__ikon {
+  position: fixed;
+  color: #2f3c32;
+  cursor: pointer;
+  right: 30px;
+  
 
 }
 
-.webshop__titel{
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: 15px;
+#kurv__ikon .ri-gift-line{
+  font-size: 50px;
 }
 
-.kategori__indhold {
+.kurv__produkt__taeller{
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: #c4492c;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: beige;
   display: flex;
-  gap: 10px; 
-  margin: auto 20px;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
 }
 
-.kategori__indhold--beskrivelse{
-  margin: 20px 20px 50px 20px;
+.produktside{
+  margin: 20px auto auto auto;
 }
 
-.produkt__link{
-  text-decoration: none;
-}
-
-.kategori__kort {
+.produktside__titel{
+  font-family: "Vollkorn";
+  font-size: 3rem;
+  font-weight: 700;
   text-align: center;
-  background-color: #c2c2c2;
-  border: solid #c2c2c2 2px;
-}
-
-.kategori__billede img{
-  width: 100%;
-  height: auto;
-}
-
-.kategori__navn{
-  font-family: 'Nunito';
-  font-size: 1.375rem;
-  font-weight: 600;
-  color: #000;
-  padding: 20px 0px;
-}
-
-/*========== PRODUKT WEBSHOP ==========*/
-
-.webshop{
-  margin: 50px auto auto auto;
-
-}
-
-.webshop__titel{
-  font-size: 35px;
-  text-align: center;
+  margin-top: 50px;
   margin-bottom: 15px;
 }
 
-.produkt__indhold--align{
+.produktside__beskrivelse{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.produkt__indhold__align{
   display: flex;
   flex-direction: row;
 }
@@ -763,12 +755,9 @@ a{
   margin: auto 20px;
 }
 
-.produkt__indhold--beskrivelse{
-  margin: 20px 20px 50px 20px;
-}
-
 .produkt__link{
   text-decoration: none;
+  color: #000;
 }
 
 .produkt__kort{
@@ -781,22 +770,28 @@ a{
 }
 
 .produkt__navn{
-  font-family: 'Nunito';
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: 20px;
 }
 
 .produkt__pris{
-font-family: 'Nunito';
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.produkt__pris--kurv .tilfoej__kurv{
-  background: orange;
+.tilfoej__gavekurv{
+  background: #c4492c;
   color: #fff;
   cursor: pointer;
+  width: 120px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.tilfoej__gavekurv:hover{
+  background: #85321E;
+  transition: 0.5s;
 }
 
 /*========== PRODUKT KURV ==========*/
@@ -821,58 +816,55 @@ font-family: 'Nunito';
 
 .kurv__titel{
   text-align: center;
-  font-size: 30px;
+  font-size: 2.5rem;
 }
 
 
-.kurv__produkt{
+.individuelle__produkt{
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
 
-.kurv__produktoplysninger{
-  display: grid;
-  gap: 8px;
-  margin-right: auto;
-}
-
-.kurv__produktbillede{
+.individuelle__produktbillede{
   width: 100px;
   height: 100px;
   object-fit: cover;
   margin-right: 20px;
 }
 
-.kurv__produkt__titel{
-  font-size: 16px;
+.individuelle__produktoplysninger{
+  display: grid;
+  gap: 8px;
+  margin-right: auto;
+}
+
+.individuelle__produktnavn{
+  font-size: 1.25rem;
   line-height: 1;
 }
 
-.kurv__pris{
+.individuelle__produktpris{
+  font-size: 1rem;
   font-weight: 400;
 }
 
-.kurv__taeller{
+.individuelle__produkttaeller{
   display: flex;
   width: 100px;
   border: 1px solid #777;
-  border-radius: 6px;
 }
 
-.kurv__taeller button{
+.individuelle__produkttaeller button{
   background: transparent;
   width: 30px;
   border: none;
   font-size: 20px;
   cursor: pointer;
+  background-color: #c4492c;
+  color: #fff;
 }
-
-.kurv__taeller #minus{
-  color: #ff0000;
-}
-
-.kurv__taeller__tal{
+.individuelle__produkttaeller__tal{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -885,8 +877,13 @@ font-family: 'Nunito';
 .fjern__produkt{
   font-size: 25px;
   cursor: pointer;
+  color: #777;
 }
 
+.fjern__produkt:hover{
+  color: #ff0000;
+  transition: 0.75s;
+}
 .i__alt{
   display: flex;
   justify-content: flex-end;
@@ -901,16 +898,21 @@ font-family: 'Nunito';
   font-weight: 600;
 }
 
-.naeste__knap{
+.tilfoej__kurv{
   display: block;
   padding: 10px 20px;
-  background: #777;
+  background: #c4492c;
   border: none;
   border-radius: 6px;
   font-size: 16px;
   color: #fff;
   margin: 20px auto 0;
   cursor: pointer;
+}
+
+.tilfoej__kurv:hover{
+  background-color: #85321E;
+  transition: 0.5s;
 }
 
 #luk__kurv{
@@ -921,7 +923,11 @@ font-family: 'Nunito';
   cursor: pointer;
 }
 
-
+#luk__kurv:hover{
+  font-size: 45px;
+  top: 15px;
+  right: 10px;
+}
 
 /*====================MEDIA QUERY====================*/
 @media only screen and (min-width: 1024px){
