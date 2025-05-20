@@ -275,13 +275,6 @@ ul{
     right: 30px;
 }
 
-/*
-.stortbillede{
-    object-fit: contain;
-    height: 600px;
-    width: 800px;
-}
-*/
 .stortbillede{
   object-fit: contain;
   width: 100%;
