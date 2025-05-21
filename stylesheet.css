@@ -683,7 +683,7 @@ a{
 }
 
 .produktside{
-  padding: 20px auto auto auto;
+  padding-top: 100px;
 }
 
 .produktside__titel{
@@ -719,7 +719,7 @@ a{
   height: auto;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .produkt__billede img{
