@@ -65,6 +65,7 @@ body {
     z-index: 5;
     position: fixed;
     background-color: #56715C;
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -926,7 +927,7 @@ a{
 }
 
 .kategorier {
-  padding: 0 40px;
+  padding: 0 50px;
   padding-bottom: 50px;
   background-color: #F0E5D7;
 }
@@ -1047,7 +1048,7 @@ h4 {
   }
 
   .menu-item {
-    padding: 33px 20px;
+    padding: 34px 20px;
     color: #EBEBEB;
     /*color: #FFFFFF;*/
   }
@@ -1134,7 +1135,7 @@ h4 {
 
 .menu-item:hover {
   background-color: #67866e;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3) inset;
+  /*box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3) inset;*/
   /*color: #F0E5D7;*/
 }
 
