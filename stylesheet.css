@@ -95,10 +95,14 @@ nav a {
 .header-logo {
     margin-right: auto;
     padding: 10px;
-    /*display: block;
-    width: 100px;
-    height: 100px;*/
 }
+
+.liwira-logo {
+  height: 70px;
+  width: 70px;
+  display: block;
+}
+
 /*
 .mobile-nav li {
     float: left;
@@ -960,11 +964,9 @@ h4 {
   }
 
   .menu-item {
-    padding: 40px 20px;
-  }
-
-  .menu-item {
+    padding: 33px 20px;
     color: #EBEBEB;
+    /*color: #FFFFFF;*/
   }
 
   .arrow {
@@ -981,18 +983,19 @@ h4 {
 }
 
 
-.menu-dropdown-items {
+.menu-dropdown-gavekurve, .menu-dropdown-kunst-deli {
   display: none;
   position: absolute; 
   background-color: #F0E5D7;
   color: #000000;
   box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
   padding: 30px;
-  margin-top: 20px;
+  top: 100%;
+  margin-left: -20px;
 } 
 
 
-.menu-item:hover .menu-dropdown-items {
+.menu-item:hover .menu-dropdown-gavekurve {
   display: flex;
   flex-direction: column;
 }
@@ -1000,15 +1003,21 @@ h4 {
 
 .dropdown-overskrift {
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 5px;
 }
 
 .dropdown-underlink {
   text-align: left;
-  padding: 10px;
+  padding: 5px;
 }
 
+.dropdown-overskrift:hover, .dropdown-underlink:hover {
+  text-decoration: underline;
+}
 
+/*
 .kunsthåndværk-dropdown {
   display: none;
   position: absolute; 
@@ -1016,7 +1025,7 @@ h4 {
   color: #000000;
   box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
   padding: 30px;
-  
+  /*
   width: 100%;
   left: 0;
   top: 100%;
@@ -1025,39 +1034,42 @@ h4 {
   overflow: hidden;
   z-index: 4;
   opacity: 0;
-  transform: translateY(-100px);
-}
+  transform: translateY(-100px);*/
 
 
+/*
 .menu-item:hover .kunsthåndværk-dropdown {
   max-height: 500px;
   opacity: 1;
   transform: translateY(0);
-}
+}*/
 
-.desktop-navbar:hover { /*skyggen bliver større?*/
+#home-navbar:hover { 
   background-color: #56715C;
   box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-item:hover {
   background-color: #67866e;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3) inset;
+  /*color: #F0E5D7;*/
 }
 
 
-
-.menu-item:hover .kunsthåndværk-dropdown {
+.menu-item:hover .menu-dropdown-kunst-deli {
   display: flex;
-
-
 }
 
-.kunsthåndværk-undermenu {
+.kunst-deli-undermenu {
   display: flex;
   flex-direction: column;
+  width: 175px;
 }
+
+/*
+.kunst-deli-undermenu .dropdown-underlink {
+  padding-right: 50px;
+}*/
 
 
   /*====================HERO====================*/
