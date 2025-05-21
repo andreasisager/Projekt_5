@@ -649,6 +649,24 @@ ul.breadcrumb li {
 
 /*==================== VINCENT ====================*/
 
+.webshop__kurv__produkt__taeller{
+  position: absolute;
+  font-family: 'Nunito';
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: #c4492c;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+
+
 a{
   color: #000;
 }
