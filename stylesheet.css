@@ -700,17 +700,11 @@ a{
   margin: 40px;
 }
 
-.produkt__indhold__align{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-
 .produkt__indhold {
   display: flex;
-  flex-direction: column;
-  gap: 10px; 
-  margin: auto;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .produkt__link{
@@ -719,6 +713,8 @@ a{
 }
 
 .produkt__kort{
+  width: auto;
+  height: auto;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 30px;
@@ -741,6 +737,7 @@ a{
 }
 
 .tilfoej__gavekurv{
+  width: fit-content;
   background: #c4492c;
   color: #fff;
   cursor: pointer;
@@ -894,12 +891,6 @@ a{
   font-size: 45px;
   top: 15px;
   right: 10px;
-}
-
-.produkt__indhold__full{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
 }
 
 /*====================MEDIA QUERY====================*/
@@ -1403,19 +1394,6 @@ h4 {
   
   /*============ VINCENT ======================*/
     /*========== PRODUKT WEBSHOP ==========*/
-
-    .produkt__indhold__align{
-      display: flex;
-      flex-direction: row;
-      margin: auto;
-    }
-  
-  .produkt__indhold__full{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-  }
-
 
   .produkt__navn{
     font-family: 'Nunito';
