@@ -648,20 +648,6 @@ a{
   color: #000;
 }
 
-.header__webshop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 25px 9%;
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 99;
-}
-
 /*============= BYG SELV GAVEKURV =============*/
 
 #kurv__ikon {
@@ -669,8 +655,7 @@ a{
   color: #2f3c32;
   cursor: pointer;
   right: 30px;
-  
-
+  top: 30px;
 }
 
 #kurv__ikon .ri-gift-line{
@@ -693,7 +678,7 @@ a{
 }
 
 .produktside{
-  margin: 20px auto auto auto;
+  padding: 20px auto auto auto;
 }
 
 .produktside__titel{
@@ -701,26 +686,27 @@ a{
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 15px;
+  padding-top: 50px;
+  padding-bottom: 15px;
 }
 
 .produktside__beskrivelse{
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 40px;
 }
 
 .produkt__indhold__align{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin: auto;
 }
 
 .produkt__indhold {
   display: flex;
   flex-direction: column;
   gap: 10px; 
-  margin: auto 20px;
+  margin: auto;
 }
 
 .produkt__link{
@@ -729,11 +715,13 @@ a{
 }
 
 .produkt__kort{
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
 }
 
 .produkt__billede img{
-  width: 100%;
+  width: 350px;
   height: auto;
 }
 
@@ -752,9 +740,9 @@ a{
   background: #c4492c;
   color: #fff;
   cursor: pointer;
-  width: 120px;
   margin-top: 20px;
   margin-bottom: 40px;
+  padding: 10px 20px;
 }
 
 .tilfoej__gavekurv:hover{
@@ -775,7 +763,7 @@ a{
   padding: 65px 20px 40px;
   z-index: 100;
   overflow: auto;
-  transition: 0,5s;
+  transition: 0.5s;
 }
 
 .kurv.aktiv{
@@ -813,6 +801,7 @@ a{
 }
 
 .individuelle__produktpris{
+  font-family: 'Nunito';
   font-size: 1rem;
   font-weight: 400;
 }
@@ -861,9 +850,16 @@ a{
   font-size: 18px;
 }
 
-.i__alt__total{
+.i__alt__tekst{
+  font-family: 'Nunito';
+  font-weight: 400;
   margin-left: 10px;
+}
+
+.i__alt__total{
+  font-family: 'Nunito';
   font-weight: 600;
+  margin-left: 10px;
 }
 
 .tilfoej__kurv{
@@ -871,7 +867,6 @@ a{
   padding: 10px 20px;
   background: #c4492c;
   border: none;
-  border-radius: 6px;
   font-size: 16px;
   color: #fff;
   margin: 20px auto 0;
@@ -895,6 +890,12 @@ a{
   font-size: 45px;
   top: 15px;
   right: 10px;
+}
+
+.produkt__indhold__full{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 /*====================MEDIA QUERY====================*/
@@ -1391,32 +1392,39 @@ h4 {
   /*============ VINCENT ======================*/
     /*========== PRODUKT WEBSHOP ==========*/
 
-    .produkt__indhold__full{
+    .produkt__indhold__align{
       display: flex;
       flex-direction: row;
+      margin: auto;
+    }
+  
+  .produkt__indhold__full{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
   }
 
 
   .produkt__navn{
-      font-family: 'Nunito';
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-top: 20px;
+    font-family: 'Nunito';
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 20px;
   }
   
   .produkt__pris__kurv{
-      font-family: 'Nunito';
-      font-size: 0.9rem;
-      font-weight: 600;
+    font-family: 'Nunito';
+    font-size: 0.9rem;
+    font-weight: 600;
   }
 
   .produkt__pris--kurv .tilfoej__kurv{
-      padding: 10;
-      background: orange;
-      border-radius: 6px;
-      font-size: 20px;
-      color: #fff;
-      cursor: pointer;
+    padding: 10;
+    background: orange;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
   }
 
   }
