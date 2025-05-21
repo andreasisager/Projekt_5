@@ -652,7 +652,8 @@ ul.breadcrumb li {
 .webshop__kurv__produkt__taeller{
   position: absolute;
   font-family: 'Nunito';
-  top: 0;
+  top: 10px;
+  right: 20px;
   width: 30px;
   height: 30px;
   background: #c4492c;
@@ -662,6 +663,7 @@ ul.breadcrumb li {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 6;
   visibility: hidden;
 }
 
