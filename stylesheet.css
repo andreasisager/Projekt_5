@@ -893,6 +893,18 @@ a{
   right: 10px;
 }
 
+
+
+/*====================Indretning====================*/
+
+.headline {
+  text-align: center;
+}
+
+
+
+
+
 /*====================MEDIA QUERY====================*/
 @media only screen and (min-width: 1024px){
 
