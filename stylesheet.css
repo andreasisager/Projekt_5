@@ -941,7 +941,6 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*border: solid #000;*/
   margin: 50px 20px;
   background-color: #fffaf3;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
@@ -951,6 +950,12 @@ a{
 .kategori-kort h2 {
   padding: 20px;
 }
+
+.kategori-kort:hover {
+  outline: solid 3px #67866e;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.6);
+}
+
 /*
 .kategorier-button {
   background-color: #c4492c;
