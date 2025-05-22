@@ -1276,7 +1276,7 @@ h4 {
   }
 
   .divider-container {
-      height: 300px;
+      height: 400px;
       overflow: hidden;
   }
 
@@ -1293,7 +1293,7 @@ h4 {
   /*====================NYHEDSBREV====================*/
  
   .nyhedsbrev-text {
-      padding: 4rem;
+      padding: 5rem;
     }
 
   /*====================OM-OSSEKTION====================*/
