@@ -1359,6 +1359,7 @@ h4 {
 
     .kategorier {
       display: flex;
+      justify-content: center;
     }
 
     .kategori-kort {
