@@ -1316,6 +1316,11 @@ h4 {
       padding-top: 812px;
     }
 
+  .divider-billede_lisbeth-index{
+    width: 100%;
+    height: auto;
+  }
+
   /*====================KONTAKT-SIDE====================*/
   .kontakt-billede {
     width: 200%;
