@@ -16,25 +16,25 @@ p{
 
 h1 {
   font-family: "Vollkorn";
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 h2 {
   font-family: "Vollkorn";
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 h3 {
   font-family: "Vollkorn";
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
 h4 {
   font-family: "Vollkorn";
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -929,7 +929,7 @@ a{
 
 .headline {
   text-align: center;
-  padding: 30px;
+  padding-top: 130px;
 }
 
 .kategorier {
@@ -945,19 +945,22 @@ a{
   
 }
 
+
+
 .kategori-kort {
   /*padding: 20px 0;*/
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 50px auto;
   background-color: #fffaf3;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  min-width: 250px;
-  max-width: 600px;
-  
-  
+  max-width: 350px;
+  max-height: 350px;
+  min-width: 200px;
+  min-height: 200px;
   overflow: hidden;
 }
 
@@ -1003,25 +1006,25 @@ p{
 
 h1 {
   font-family: "Vollkorn";
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
 h2 {
   font-family: "Vollkorn";
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 h3 {
   font-family: "Vollkorn";
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 h4 {
   font-family: "Vollkorn";
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -1360,49 +1363,31 @@ h4 {
 
     .kategori-kort {
       margin: 50px 50px;
-      min-width: 230px;
+      max-width: 400px;
+      max-height: 400px;
     }
 
-    .kategori-kort h2 {
-      font-size: 2em;
+    .headline {
+    padding-top: 160px;
     }
 /*
-    .kategorier-button {
-      margin-top: 30px;
-    }*/
-
-    /*
-    
-.headline {
-  text-align: center;
-  padding: 30px;
-}
-
-.kategorier {
-  padding: 0 30px;
-  padding-bottom: 50px;
-  background-color: #F0E5D7;
-}
-
-.kategori-kort img {
-  width: 100%;
-  display: block;
-}
-
 .kategori-kort {
-  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 20px;
+  text-align: center;
+  margin: 50px auto;
   background-color: #fffaf3;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   text-decoration: none;
+  max-width: 350px;
+  max-height: 350px;
+  min-width: 200px;
+  min-height: 200px;
+  overflow: hidden;
 }
+*/
 
-.kategori-kort h2 {
-  padding: 20px;
-}*/
 
 .kategori-kort:hover {
   /*outline: solid 3px rgba(103, 134, 110, 0.5);*/
