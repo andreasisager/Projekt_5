@@ -340,7 +340,7 @@ ul{
     color: white;
     max-width: 600px;
     margin: auto;
-    padding: 75px;
+    padding: 3rem;
   }
 
   .signup-form {
@@ -927,8 +927,7 @@ a{
 }
 
 .kategorier {
-  margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 50px;
   padding-bottom: 50px;
   background-color: #F0E5D7;
 }
@@ -936,6 +935,8 @@ a{
 .kategori-kort img {
   width: 100%;
   display: block;
+  
+  
 }
 
 .kategori-kort {
@@ -947,10 +948,11 @@ a{
   background-color: #fffaf3;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  max-width: 400px;
-  max-height: 400px;
+  min-width: 250px;
+  max-width: 600px;
+  
+  
   overflow: hidden;
-  position: relative;
 }
 
 .kategori-kort h2 {
@@ -1282,7 +1284,7 @@ h4 {
   /*====================NYHEDSBREV====================*/
  
   .nyhedsbrev-text {
-      padding: 100px;
+      padding: 4rem;
     }
 
   /*====================OM-OSSEKTION====================*/
@@ -1315,8 +1317,8 @@ h4 {
     }
 
   .divider-billede_lisbeth-index{
-    width: 100%;
-    height: auto;
+      width: 100%;
+      height: auto;
   }
 
   /*====================KONTAKT-SIDE====================*/
@@ -1348,7 +1350,6 @@ h4 {
 
     .kategorier {
       display: flex;
-      justify-content: center;
     }
 
     .kategori-kort {
