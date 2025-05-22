@@ -125,12 +125,13 @@ ul{
     padding: 20px;
     margin: 10px;
   }
-
+/*
 .burgermenu-lukket {
   display: none;
-}
+}*/
 
 .burgermenu .burgermenu-dropdown {
+  display: none;
   font-family: 'Nunito';
   position: absolute;
   background-color: #56715C;
@@ -146,10 +147,16 @@ ul{
   box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  top: 100%;
+  
+} 
+
+#burger-gavekurve {
+  display: none;
+  flex-direction: column;
+  top: 0;
   left: 0;
   position: absolute;
-} 
+}
 
 .kunst-deli-undermenu {
   display: flex;
