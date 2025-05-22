@@ -340,7 +340,7 @@ ul{
     color: white;
     max-width: 600px;
     margin: auto;
-    padding: 3rem;
+    padding: 75px;
   }
 
   .signup-form {
@@ -927,7 +927,8 @@ a{
 }
 
 .kategorier {
-  padding: 0 50px;
+  margin: 0 auto;
+  padding: 0 30px;
   padding-bottom: 50px;
   background-color: #F0E5D7;
 }
@@ -935,8 +936,6 @@ a{
 .kategori-kort img {
   width: 100%;
   display: block;
-  
-  
 }
 
 .kategori-kort {
@@ -948,11 +947,10 @@ a{
   background-color: #fffaf3;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  min-width: 250px;
-  max-width: 600px;
-  
-  
+  max-width: 400px;
+  max-height: 400px;
   overflow: hidden;
+  position: relative;
 }
 
 .kategori-kort h2 {
@@ -1284,7 +1282,7 @@ h4 {
   /*====================NYHEDSBREV====================*/
  
   .nyhedsbrev-text {
-      padding: 4rem;
+      padding: 100px;
     }
 
   /*====================OM-OSSEKTION====================*/
@@ -1350,6 +1348,7 @@ h4 {
 
     .kategorier {
       display: flex;
+      justify-content: center;
     }
 
     .kategori-kort {
