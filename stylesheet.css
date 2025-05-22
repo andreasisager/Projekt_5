@@ -117,22 +117,182 @@ ul{
     padding: 0;
     width: 100%;
     text-align: center;
-    /*font-size: 1.5em;*/
 }
-/*
-.header__item{
-    display: block;
-    border-width: 2px;
-    padding: 18px 20px;
-    text-decoration: none;
-}*/
-
 
 
 .fa-search, .fa-shopping-cart, .fa-bars {
-    color: #F0E5D7;
-    margin: 30px;
+    color: #EBEBEB;
+    padding: 20px;
+    margin: 10px;
   }
+
+.burgermenu-lukket {
+  display: none;
+}
+
+.burgermenu .burgermenu-dropdown {
+  font-family: 'Nunito';
+  position: absolute;
+  background-color: #56715C;
+  color: #EBEBEB;
+  top: 100%;
+  left: 0;
+}
+
+
+.burgermenu-dropdown-gavekurve, .burgermenu-dropdown-kunst-deli {
+  background-color: #F0E5D7;
+  color: #000000;
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  position: absolute;
+} 
+
+.kunst-deli-undermenu {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.arrow {
+  border: solid #EBEBEB;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 2px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); 
+}
+
+.burgermenu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/*
+  .desktop-navbar {
+      display: initial;
+      display: flex;
+      flex-direction: row;
+      font-family: 'Nunito';
+      align-items: center;
+      width: inherit;
+  }
+
+
+  .header-menu {
+    display: flex;
+    justify-content: center;    
+  }
+
+  .header-icons {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .menu-item {
+    padding: 34px 20px;
+    color: #EBEBEB;
+    color: #FFFFFF;
+  }
+
+
+
+
+.menu-dropdown-gavekurve, .menu-dropdown-kunst-deli {
+  display: none;
+  position: absolute; 
+  background-color: #F0E5D7;
+  color: #000000;
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  top: 100%;
+  margin-left: -20px;
+} 
+
+
+.menu-item:hover .menu-dropdown-gavekurve {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.dropdown-overskrift {
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 5px;
+}
+
+.dropdown-underlink {
+  text-align: left;
+  padding: 5px;
+}
+
+.dropdown-overskrift:hover, .dropdown-underlink:hover {
+  text-decoration: underline;
+}
+
+
+.kunsthåndværk-dropdown {
+  display: none;
+  position: absolute; 
+  background-color: #F0E5D7;
+  color: #000000;
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  
+  width: 100%;
+  left: 0;
+  top: 100%;
+  max-height: 0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 4;
+  opacity: 0;
+  transform: translateY(-100px);
+
+
+
+.menu-item:hover .kunsthåndværk-dropdown {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#home-navbar:hover { 
+  background-color: #56715C;
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item:hover {
+  background-color: #67866e;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3) inset;
+  color: #F0E5D7;
+}
+
+
+.menu-item:hover .menu-dropdown-kunst-deli {
+  display: flex;
+}
+
+.kunst-deli-undermenu {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+}
+
+.fa-search, .fa-shopping-cart, .fa-bars {
+    padding: 10px;
+    margin: 10px;
+  }*/
 
 
 
@@ -1156,6 +1316,11 @@ h4 {
   flex-direction: column;
   width: 175px;
 }
+
+.fa-search, .fa-shopping-cart, .fa-bars {
+    padding: 10px;
+    margin: 10px;
+  }
 
 /*
 .kunst-deli-undermenu .dropdown-underlink {

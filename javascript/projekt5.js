@@ -13,4 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     $("#slideshow").load("slideshow.html");
 });
     
-
+document.addEventListener("DOMContentLoaded", function () {
+    $("#burgermenu").load("burgermenu.html");
+});
