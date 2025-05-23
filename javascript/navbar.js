@@ -1,54 +1,15 @@
-/*Inspireret af...*/
-const nav = document.getElementById('home-navbar');
-const burger = document.getElementById("burgermenu-dropdown");
-
-window.addEventListener('scroll', function() {
-    if (window.scrollY > 50) {
-        nav.classList.add('transition');
-    }
-
-    else if (burger.style.display === "block" && window.scrollY <= 50) {
-        nav.classList.add('farveskift');
-    }
-
-    else {
-        nav.classList.remove('transition');
-    }
-});
-
 
 /*Åbner burgermenuen når man klikker på burgermenu-ikonet og tilføjer baggrundsfarve*/
 document.getElementById("burgermenu-icon").addEventListener("click", openBurger)
-/*const burgerMenu = document.getElementById("burgermenu-icon");*/
+const burger = document.getElementById("burgermenu-dropdown");
 
 function openBurger() {
   if (burger.style.display === "block") {
     burger.style.display = "none";
-    /*burgerMenu.classList.remove('burgermenu-item-aktiv');*/
   } 
 
   else {
     burger.style.display = "block";
-    /*burgerMenu.classList.add('burgermenu-item-aktiv');*/
-  }
-}
-
-
-/*Sørger for at navbaren får farve når burgermenuen åbnes på forsiden afhængigt af, om der er blevet scrollet*/
-document.getElementById("burgermenu-icon").addEventListener("click", skiftFarve)
-
-function skiftFarve() {
-  if (burger.style.display === "block" && window.scrollY <= 50) {
-      nav.classList.add('farveskift');
-  }
-
-  else if (burger.style.display === "none" && window.scrollY <= 50) {
-      nav.classList.remove('farveskift');
-      nav.classList.remove('transition')
-  }
-
-  else {
-    nav.classList.remove('farveskift');
   }
 }
 
@@ -105,5 +66,3 @@ function openDeli() {
     deliMenu.classList.add('burgermenu-item-aktiv');
   }
 }
-
-

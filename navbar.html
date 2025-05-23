@@ -3,8 +3,86 @@
     <li class="header-logo"><a href="index.html"><img src="images/LIWIRA.webp" class="liwira-logo" alt="LIWIRA-Logo"></a></li>
     <li class="soeg"><a href="#" class="fa fa-search"></a></li>
     <li class="indkoebskurv"><a href="#" class="fa fa-shopping-cart"></a></li>
-    <li class="burgermenu"><a href="#" class="fa fa-bars" id="burgermenu"></a></li>
+    <li class="burgermenu" id="burgermenu">
+        <a class="fa fa-bars" id="burgermenu-icon"></a>
+        <ul id="burgermenu-dropdown" class="burgermenu-dropdown">
+            <li class="burgermenu-item" id="burgermenu-item-gavekurve">
+                <a class="burgermenu-subitem">Gavekurve</a>
+                <div class="burger-arrow burgermenu-subitem" id="gavekurv-arrow"><i class="arrow down"></i></div>
+                <div class="burgermenu-dropdown-gavekurve" id="burger-gavekurve">
+                    <!--<a href="#" class="dropdown-overskrift">Gavekurve</a>-->
+                    <a href="sammensattegavekurve.html" class="dropdown-underlink">Sammensatte gavekurve</a>
+                    <a href="bygselv.html" class="dropdown-underlink">Byg selv gavekurv</a>
+                </div>
+            </li>
+            <li class="burgermenu-item" id="burgermenu-item-kunst">
+                <a class="burgermenu-subitem">Kunsthåndværk og interiør</a>
+                <div class="burger-arrow burgermenu-subitem"><i class="arrow down"></i></div>
+                <div class="burgermenu-dropdown-kunst-deli" id="burger-kunst">
+                    <div class="burger-undermenu">
+                        <a href="indretning.html" class="dropdown-overskrift">Indretning</a>
+                        <a href="#" class="dropdown-underlink">Keramik</a>
+                        <a href="#" class="dropdown-underlink">Træfigurer</a>
+                        <a href="#" class="dropdown-underlink">Tørrede Blomster</a>
+                        <a href="#" class="dropdown-underlink">Vaser</a>
+                        <a href="#" class="dropdown-underlink">Lys & Lysestager</a>
+                        <a href="#" class="dropdown-underlink">Tæpper</a>
+                        <a href="#" class="dropdown-underlink">Legetøj & Bamser</a>
+                    </div>
+                    <div class="burger-undermenu">
+                        <a href="#" class="dropdown-overskrift">Køkken</a>
+                        <a href="#" class="dropdown-underlink">Glas</a>
+                        <a href="#" class="dropdown-underlink">Skåle & Fade</a>
+                        <a href="#" class="dropdown-underlink">Kopper & Tallerkener</a>
+                        <a href="#" class="dropdown-underlink">Drikkedunke</a>
+                        <a href="#" class="dropdown-underlink">Køkkenredskaber</a>
+                    </div>
+                    <div class="burger-undermenu">
+                        <a href="#" class="dropdown-overskrift">Badeværelse</a>
+                        <a href="#" class="dropdown-underlink">Lotion & Cremer</a>
+                        <a href="#" class="dropdown-underlink">Sæbe</a>
+                    </div>
+                </div>            
+            </li>
+            <li class="burgermenu-item" id="burgermenu-item-deli">
+                <a class="burgermenu-subitem">Delikatesser</a>
+                <div class="burger-arrow burgermenu-subitem"><i class="arrow down"></i></div>
+                <div class="burgermenu-dropdown-kunst-deli" id="burger-deli">
+                    <div class="burger-undermenu">
+                        <a href="#" class="dropdown-overskrift">Lækkerier</a>
+                        <a href="#" class="dropdown-underlink">Nødder</a>
+                        <a href="#" class="dropdown-underlink">Lakrids</a>
+                        <a href="#" class="dropdown-underlink">Chokolade</a>
+                        <a href="#" class="dropdown-underlink">Karameller</a>
+                        <a href="#" class="dropdown-underlink">Vingummi</a>
+                        <a href="#" class="dropdown-underlink">Chips</a>
+                    </div>
+                    <div class="burger-undermenu">
+                        <a href="#" class="dropdown-overskrift">Drikke</a>
+                        <a href="#" class="dropdown-underlink">Spiritus</a>
+                        <a href="#" class="dropdown-underlink">Øl</a>
+                        <a href="#" class="dropdown-underlink">Vin</a>
+                        <a href="#" class="dropdown-underlink">Kaffe</a>
+                        <a href="#" class="dropdown-underlink">Te</a>
+                        <a href="#" class="dropdown-underlink">Juice, Most & Saft</a>
+                    </div>
+                    <div class="burger-undermenu">
+                        <a href="#" class="dropdown-overskrift">Konserves</a>
+                        <a href="#" class="dropdown-underlink">Krydderier</a>
+                        <a href="#" class="dropdown-underlink">Olie</a>
+                        <a href="#" class="dropdown-underlink">Sennep, Mayo & Aioli</a>
+                        <a href="#" class="dropdown-underlink">Tørrede Tomater & Oliven</a>
+                        <a href="#" class="dropdown-underlink">Honning</a>
+                        <a href="#" class="dropdown-underlink">Marmelade</a>
+                    </div>
+                </div>
+            </li>
+            <li class="burgermenu-item"><a href="omos.html" class="burgermenu-subitem">Om os</a></li>
+            <li class="burgermenu-item"><a href="kontakt.html" class="burgermenu-subitem">Kontakt</a></li>
+        </ul>
+    </li>
 </ul>
+
 
 <div class="desktop-navbar">
     <div class="header-logo">
@@ -89,3 +167,5 @@
         <a href="#" class="fa fa-shopping-cart"></a>
     </div>
 </div>
+
+<script src="javascript/navbar.js" defer></script>
