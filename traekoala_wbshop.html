@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Træabe</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="javascript/projekt5.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+</head>
+<body>
+<header>
+    <nav id="navbar"></nav>
+</header>
+<main>
+    <ul class="breadcrumb">
+        <li><a href="indretning.html">Indretning</a></li>
+        <li><a href="traefigur_webshop.html">Træfigure</a></li>
+        <li>Træ Koala</li>
+    </ul>
+
+    <div class="page-wrapper">
+        <div class="specifikprodukt-sektion">
+            <img class="produkt-billede" src="images/traekoala.webp" alt="træ koala">
+
+            <div class="paddingbetween">
+                <div class="produkt-information">
+                    <h3>Træ Koala</h3>
+                    <p class="gavekurv-pris">239,-</p>
+                    <p class="underoverskrift-specifikprodukt"> To små nuttede trækoala der kan pynte fint i hjemmet.</p>
+                </div>
+                <div class="container">
+            
+                    <label for="quantity" class="amount">Antal</label>
+                    <input type="number" id="quantity" value="1" min="1">
+            
+                    <button class="tilfoejtilkurv">Tilføj til kurv</button>
+                    <p class="frifragt">Fri fragt over 394,95</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="anbefaldedeprodukterpadding">Du vil måske også kunne lide</h3>
+    
+    <div class="align-mindreprodukter">
+        <div class="specifikprodukt-sektion-mindre">
+            <img class="gavekurv-billede" src="images/produktbilledelyserød.webp" alt="Rengøringsmiddel">
+            <div class="produkt-information-mindre">
+                <h4>Rengøringsmiddel</h4>
+                <p class="gavekurv-pris-mindre">79,95,-</p>
+            </div>
+        </div>
+        <div class="specifikprodukt-sektion-mindre">
+            <img class="gavekurv-billede" src="images/produktbilledelyserød.webp" alt="Rengøringsmiddel">
+            <div class="produkt-information-mindre">
+                <h4>Rengøringsmiddel</h4>
+                <p class="gavekurv-pris-mindre">79,95,-</p>
+            </div>
+        </div>
+        <div class="specifikprodukt-sektion-mindre">
+            <img class="gavekurv-billede" src="images/produktbilledelyserød.webp" alt="Remgøringsmiddel">
+            <div class="produkt-information-mindre">
+                <h4>Rengøringsmiddel</h4>
+                <p class="gavekurv-pris-mindre">79,95,-</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer id="footer-inject"></footer>
+    </div>
+</main>
+</body>
+</html>
