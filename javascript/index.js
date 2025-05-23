@@ -1,4 +1,5 @@
 /*Inspireret af...*/
+/*Tilføjer baggrundsfarve til navbaren når man scroller på forsiden*/
 const nav = document.getElementById('home-navbar');
 const burger = document.getElementById("burgermenu-dropdown");
 
@@ -19,7 +20,7 @@ window.addEventListener('scroll', function() {
 
 /*Åbner burgermenuen når man klikker på burgermenu-ikonet og tilføjer baggrundsfarve*/
 document.getElementById("burgermenu-icon").addEventListener("click", openBurger)
-/*const burgerMenu = document.getElementById("burgermenu-icon");*/
+const burgerMenu = document.getElementById("burgermenu-icon");
 
 function openBurger() {
   if (burger.style.display === "block") {
@@ -32,6 +33,14 @@ function openBurger() {
     /*burgerMenu.classList.add('burgermenu-item-aktiv');*/
   }
 }
+
+/*Når man klikker uden for burgermenuen og burgermenu-ikonet, så lukker burgermenuen
+window.addEventListener('click', function(klik) {
+  if (!burger.contains(klik.target) && !burgerMenu.contains(klik.target) && window.scrollY <= 50)
+      burger.style.display = "none";
+      nav.classList.add('farveskift');
+  
+});*/
 
 
 /*Sørger for at navbaren får farve når burgermenuen åbnes på forsiden afhængigt af, om der er blevet scrollet*/
@@ -48,7 +57,7 @@ function skiftFarve() {
   }
 
   else {
-    nav.classList.remove('farveskift');
+      nav.classList.remove('farveskift');
   }
 }
 

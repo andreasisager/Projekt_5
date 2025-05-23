@@ -1,5 +1,5 @@
 
-/*Åbner burgermenuen når man klikker på burgermenu-ikonet og tilføjer baggrundsfarve*/
+/*Åbner burgermenuen når man klikker på burgermenu-ikonet*/
 document.getElementById("burgermenu-icon").addEventListener("click", openBurger)
 const burger = document.getElementById("burgermenu-dropdown");
 
