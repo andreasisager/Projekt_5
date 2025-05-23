@@ -1,128 +1,73 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
     <title>Drikke</title>
+    <link href="stylesheet.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="javascript/projekt5.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 </head>
 <body>
- <header>
+    <header>
         <nav id="navbar"></nav>
-</header>
+    </header>
     <main>
-
-        <div class="header-icons">
-            <a href="#" class="fa fa-search"></a>
-            <a href="#" class="fa fa-shopping-cart"></a>
-            <span class="webshop__kurv__produkt__taeller"></span>
+        <div class="headline">
+            <h1>Drikke</h1>
         </div>
+        
+        <div class="kategorier_column">
+            <div class="kategorier">
+                <a href="noedder_webshop.html" class="kategori-kort">
+                    <h2></h2>
+                    <img src="images/produktbilledelyserød.webp" alt="">
+                    <!--<a href="#" class="kategorier-button">Se udvalg</a>-->
+                </a>
 
-        <div class="kurv">
-            <h2 class="kurv__titel">Dine varer</h2>
-            <div class="kurv__indhold">
-                <!--<div class="individuelle__produkt">
-                    <img src="images/spring_favorites_18.webp" class="individuelle__produktbillede">
-                    <div class="individuelle__produktoplysninger">
-                        <h2 class="individuelle__produktnavn">SPRING FAVORITES - 18</h2>
-                        <span class="individuelle__produktpris">182 kr</span>
-                        <div class="individuelle__produkttaeller">
-                            <button class="minus">-</button>
-                            <span class="individuelle__produkttaeller__tal"></span>
-                            <button class="plus">+</button>
-                        </div>
-                    </div>
-                    <i class="ri-delete-bin-line fjern__produkt"></i>
-                </div>-->
-            </div>
-            <div class="i__alt">
-                <div class="i__alt__tekst">i alt</div>
-                <div class="i__alt__total">0 kr</div>
-            </div>
-            <button class="tilfoej__kurv">Videre</button>
-            <i class="ri-close-line" id="luk__kurv"></i>
-        </div>
+                <a href="lakrids_webshop.html" class="kategori-kort">
+                    <h2>Spiritus</h2>
+                    <img src="images/produktbilledelyserød.webp" alt="">
+                </a>
 
-        <ul class="breadcrumb">
-        <li><a href="delikatesser.html">Delikatesser</a></li>
-        <li>Drikke</li>
-        </ul>
-
-        <div class="produktside">
-            <h1 class="produktside__titel">Drikke</h1>
-            <div class="produktside__beskrivelse">
-                <p>her ser du udvalget af alt vores drikkelse</P>
+                <a href="chokolade_webshop.html" class="kategori-kort">
+                    <h2>Øl</h2>
+                    <img src="images/produktbilledelyserød.webp" alt="">
+                </a>
             </div>
-            <div class="produkt__indhold">
-                <!--produkt 1-->
-                <div class="produkt__kort">
-                    <a href="vin_webshop.html" class="produkt__link">
-                        <div class="produkt__billede">
-                            <img src="images/vin.webp" alt="vin grenoble">
-                        </div>
-                    </a>
-                    <a href="vin_webshop.html" class="produkt__link">
-                        <h2 class="produkt__navn">Vin grenoble</h2>
-                    </a>
-                    <div class="produkt__pris__kurv">
-                        <span class="produkt__pris">125 kr</span>
-                    </div>
-                    <p class="tilfoej__gavekurv">Tilføj til kurv</p>
-                </div>
-                <!--produkt 2-->
-                <div class="produkt__kort">
-                    <a href="vin_2_webshop.html" class="produkt__link">
-                        <div class="produkt__billede">
-                            <img src="images/vin_2.webp" alt="Vin de pior">
-                        </div>
-                    </a>
-                    <a href="vin_2_webshop.html" class="produkt__link">
-                    <h2 class="produkt__navn">Vin de pior</h2>
-                    </a>
-                    <div class="produkt__pris__kurv">
-                        <span class="produkt__pris">189 kr</span>
-                    </div>
-                    <p class="tilfoej__gavekurv">Tilføj til kurv</p>
-                </div>
-                <!--produkt 3-->
-                <div class="produkt__kort">
-                    <a href="dildakvavit_webshop.html" class="produkt__link">
-                        <div class="produkt__billede">
-                            <img src="/images/akvavit_nyborgdistelleri.webp" alt="Dildakvavit fra nyborg distelleri">
-                        </div>
-                    </a>
-                    <a href="dildakvavit_webshop.html" class="produkt__link">
-                    <h2 class="produkt__navn">Dild akvavit</h2>
-                    </a>
-                    <div class="produkt__pris__kurv">
-                        <span class="produkt__pris">399 kr</span>
-                    </div>
-                    <p class="tilfoej__gavekurv">Tilføj til kurv</p>
-                </div>
-                <div class="produkt__kort">
-                    <a href="kommenakvavit_webshop.html" class="produkt__link">
-                        <div class="produkt__billede">
-                            <img src="/images/akvavit_nyborgdistelleri.webp" alt="kommenakvavit fra nyborg distelleri">
-                        </div>
-                    </a>
-                    <a href="kommenakvavit_webshop.html" class="produkt__link">
-                    <h2 class="produkt__navn">Kommen akvavit</h2>
-                    </a>
-                    <div class="produkt__pris__kurv">
-                        <span class="produkt__pris">399 kr</span>
-                    </div>
-                    <p class="tilfoej__gavekurv">Tilføj til kurv</p>
-                </div>
+
+            <div class="kategorier">
+
+                <a href="indretning.html" class="kategori-kort">
+                    <h2>Vin</h2>
+                    <img src="images/produktbilledelyserød.webp" alt="">
+                    <!--<a href="#" class="kategorier-button">Se udvalg</a>-->
+                </a>
+                <a href="indretning.html" class="kategori-kort">
+                    <h2>Kaffe</h2>
+                    <img src="images/produktbilledelyserød.webp" alt="">
+                    <!--<a href="#" class="kategorier-button">Se udvalg</a>-->
+                </a>
+
+                <a href="#" class="kategori-kort">
+                    <h2>Te</h2>
+                    <img src="images/produktbilledelyserød.webp" alt="">
+                </a>
+            </div>
+            <div class="kategorier">
+
+                <a href="indretning.html" class="kategori-kort">
+                    <h2>Vin</h2>
+                    <img src="images/produktbilledelyserød.webp" alt="">
+                    <!--<a href="#" class="kategorier-button">Se udvalg</a>-->
+                </a>
             </div>
         </div>
-        <script src="/javascript/webshop.js" defer></script>
     </main>
     <footer id="footer-inject"></footer>
 </body>
