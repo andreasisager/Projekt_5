@@ -1105,6 +1105,11 @@ a{
   background-color: #F0E5D7;
 }
 
+.kategorier .kategorier_column {
+  display: flex;
+  flex-direction: column;
+}
+
 .kategori-kort img {
   width: 100%;
   display: block;
