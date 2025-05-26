@@ -126,15 +126,38 @@ let forsideEksempler = "";
 
 function udskrivGavekurve() {
   for (let i = 0; i < forsideGavekurve.length; i++) {
-    forsideEksempler += '<a href="' + link + '" class="gavekurv-sektion"><img class="gavekurv-billede" src="' + billede + '" alt="' + navn + '"><div class="produkt-information"><p class="gavekurv-navn">' + navn + '</p><p class="gavekurv-pris">' + pris +'</p></div></a>';
+    forsideEksempler += '<a href="' + forsideGavekurve[i].link + '" class="gavekurv-sektion"><img class="gavekurv-billede" src="' + forsideGavekurve[i].billede + '" alt="' + forsideGavekurve[i].navn + '"><div class="produkt-information"><p class="gavekurv-navn">' + forsideGavekurve[i].navn + '</p><p class="gavekurv-pris">' + forsideGavekurve[i].pris +'</p></div></a>';
   }
-
   document.getElementById("forside-gavekurve").innerHTML = forsideEksempler;
-
 }
 
-
 udskrivGavekurve();
+
+
+/*
+<a href="jubilaeumsgavekurven_webshop.html" class="gavekurv-sektion">
+    <img class="gavekurv-billede" src="images/jubilaeumsgavekurv.webp" alt="Jubilæumsgavekurv">
+    <div class="produkt-information">
+        <p class="gavekurv-navn">Jubilæumsgavekurv</p>
+        <p class="gavekurv-pris">399 kr.</p>
+    </div>
+</a>
+
+<a href="foedselsdagsgavekurven_webshop.html" class="gavekurv-sektion">
+    <img class="gavekurv-billede" src="images/foedselsdagsgavekurv.webp" alt="Fødselsdagsgavekurv">
+    <div class="produkt-information">
+        <p class="gavekurv-navn">Fødselsdagsgavekurv</p>
+        <p class="gavekurv-pris">299 kr.</p>
+    </div>
+</a>
+
+<a href="firmagavekurven_webshop.html" class="gavekurv-sektion">
+    <img class="gavekurv-billede" src="images/firmagavekurv.webp" alt="Jubilæumsgavekurv">
+    <div class="produkt-information">
+        <p class="gavekurv-navn">Firmagavekurv</p>
+        <p class="gavekurv-pris">249 kr.</p>
+    </div>
+</a>*/
 
 
 
