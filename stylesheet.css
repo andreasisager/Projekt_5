@@ -852,9 +852,7 @@ ul.breadcrumb li {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-}
-.panel ul {
-  justify-content: left;
+  text-align: left;
 }
 
 
