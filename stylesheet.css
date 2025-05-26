@@ -1061,9 +1061,12 @@ a{
   flex-direction: column;
 }
 
-.kategori-kort img {
+.kategori-image-container img {
   width: 100%;
   display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 
@@ -1078,41 +1081,18 @@ a{
   background-color: #fffaf3;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  max-width: 350px;
-  max-height: 350px;
-  min-width: 200px;
-  min-height: 200px;
-  overflow: hidden;
+  width: 300px;
+  height: 300px;
 }
 
 .kategori-kort h2 {
   padding: 20px;
 }
 
-/*
-.kategori-kort:hover {
-  outline: solid 3px rgba(103, 134, 110, 0.5);
-  outline: solid 3px rgba(86, 112, 92, 0.5);
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.6);
-}*/
-
-/*
-.kategorier-button {
-  background-color: #c4492c;
-  color: white;
-  border: none;
-  text-decoration: none;
-  padding: 16px 32px;
-  font-family: 'nunito';
-  font-size: 1rem;
-  font-weight: 700;
-  margin-top: 20px;
+.kategori-image-container {
+  overflow: hidden;
 }
 
-.kategorier-button:hover {
-    background-color: #85321E;
-    transition-duration: 0.3s;
-  }*/
     
 
 /*====================MEDIA QUERY====================*/
@@ -1493,37 +1473,13 @@ h4 {
       justify-content: center;
     }
 
-    .kategori-kort {
-      margin: 50px 50px;
-      max-width: 400px;
-      max-height: 400px;
-    }
-
     .headline {
     padding-top: 160px;
     }
-/*
-.kategori-kort {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 50px auto;
-  background-color: #fffaf3;
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  max-width: 350px;
-  max-height: 350px;
-  min-width: 200px;
-  min-height: 200px;
-  overflow: hidden;
-}
-*/
+
 
 
 .kategori-kort:hover {
-  /*outline: solid 3px rgba(103, 134, 110, 0.5);*/
-  /*outline: solid 3px rgba(86, 112, 92, 0.5);*/
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.6);
 }
 
