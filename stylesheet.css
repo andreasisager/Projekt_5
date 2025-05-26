@@ -695,7 +695,7 @@ ul.breadcrumb li {
     padding: 1.5rem;
     font-family: "Vollkorn";
     text-align: left;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 50px;
   }
 
@@ -716,7 +716,7 @@ ul.breadcrumb li {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: center;
+    margin-left: 124px;
 }
 
 /*======================ACCORDION=====================*/
@@ -1666,7 +1666,6 @@ h4 {
     .anbefaldedeprodukterpadding{
       padding-top: 20px;
       padding-bottom: 20px;
-      padding-left: 100px;
     }
   
   /*============ VINCENT ======================*/
