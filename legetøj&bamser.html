@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Legetøh & bamser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="javascript/projekt5.js" defer></script>
+</head>
+<body>
+ <header>
+        <nav id="navbar"></nav>
+</header>
+    <main>
+
+        <div class="header-icons">
+            <a href="#" class="fa fa-search"></a>
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <span class="webshop__kurv__produkt__taeller"></span>
+        </div>
+
+        <div class="kurv">
+            <h2 class="kurv__titel">Dine varer</h2>
+            <div class="kurv__indhold">
+                <!--<div class="individuelle__produkt">
+                    <img src="images/spring_favorites_18.webp" class="individuelle__produktbillede">
+                    <div class="individuelle__produktoplysninger">
+                        <h2 class="individuelle__produktnavn">SPRING FAVORITES - 18</h2>
+                        <span class="individuelle__produktpris">182 kr</span>
+                        <div class="individuelle__produkttaeller">
+                            <button class="minus">-</button>
+                            <span class="individuelle__produkttaeller__tal"></span>
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <i class="ri-delete-bin-line fjern__produkt"></i>
+                </div>-->
+            </div>
+            <div class="i__alt">
+                <div class="i__alt__tekst">i alt</div>
+                <div class="i__alt__total">0 kr</div>
+            </div>
+            <button class="tilfoej__kurv">Videre</button>
+            <i class="ri-close-line" id="luk__kurv"></i>
+        </div>
+
+        <ul class="breadcrumb">
+        <li><a href="indretning.html">Indretning</a></li>
+        <li>Legetøj & bamser</li>
+        </ul>
+
+        <div class="produktside">
+            <h1 class="produktside__titel">Legetøj og bamser</h1>
+            <div class="produktside__beskrivelse">
+                <p>Her ser du udvalget af vore populærer varer til de helt små</P>
+            </div>
+            <div class="produkt__indhold">
+                <!--produkt 1-->
+                <div class="produkt__kort">
+                    <a href="legetoejsbil_webshop.html" class="produkt__link">
+                        <div class="produkt__billede">
+                            <img src="images/legetoej.jpg" alt="Legetøjsbil">
+                        </div>
+                    </a>
+                    <a href="Traelegetøj_webshop.html" class="produkt__link">
+                        <h2 class="produkt__navn">Legetøjsbil</h2>
+                    </a>
+                    <div class="produkt__pris__kurv">
+                        <span class="produkt__pris">139 kr</span>
+                    </div>
+                    <p class="tilfoej__gavekurv">Tilføj til kurv</p>
+                </div>
+                <!--produkt 2-->
+                <div class="produkt__kort">
+                    <a href="bjoernebamse_webshop.html" class="produkt__link">
+                        <div class="produkt__billede">
+                            <img src="images/bjoernebamse.webp" alt="Bjørnebamse">
+                        </div>
+                    </a>
+                    <a href="bjoernebamse_webshop.html" class="produkt__link">
+                    <h2 class="produkt__navn">Nuttet bjørnebamse</h2>
+                    </a>
+                    <div class="produkt__pris__kurv">
+                        <span class="produkt__pris">170 kr</span>
+                    </div>
+                    <p class="tilfoej__gavekurv">Tilføj til kurv</p>
+                </div>
+                <!--produkt 3-->
+                <div class="produkt__kort">
+                    <a href="kaninbamse_webshop.html" class="produkt__link">
+                        <div class="produkt__billede">
+                            <img src="/images/kaninbamse.webp" alt="kaninbamse">
+                        </div>
+                    </a>
+                    <a href="kaninbamse__webshop.html" class="produkt__link">
+                    <h2 class="produkt__navn">Kaninbamse</h2>
+                    </a>
+                    <div class="produkt__pris__kurv">
+                        <span class="produkt__pris">198 kr</span>
+                    </div>
+                    <p class="tilfoej__gavekurv">Tilføj til kurv</p>
+                </div>
+            </div>
+        </div>
+        <script src="/javascript/webshop.js" defer></script>
+    </main>
+    <footer id="footer-inject"></footer>
+</body>
+</html>
