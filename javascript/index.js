@@ -116,3 +116,28 @@ function openDeli() {
 }
 
 
+
+const forsideGavekurve = [
+  {navn: "Jubilæumsgavekurv", link: "jubilaeumsgavekurven_webshop.html", billede: "images/jubilaeumsgavekurv.webp", pris: "399 kr."},
+  {navn: "Fødselsdagsgavekurv", link: "foedselsdagsgavekurven_webshop.html", billede: "images/foedselsdagsgavekurv.webp", pris: "299 kr."},
+  {navn: "Firmagavekurven", link: "firmagavekurven_webshop.html", billede: "images/firmagavekurv.webp", pris: "249 kr."}
+]
+let forsideEksempler = "";
+
+function udskrivGavekurve() {
+  for (let i = 0; i < forsideGavekurve.length; i++) {
+    forsideEksempler += '<a href="' + link + '" class="gavekurv-sektion"><img class="gavekurv-billede" src="' + billede + '" alt="' + navn + '"><div class="produkt-information"><p class="gavekurv-navn">' + navn + '</p><p class="gavekurv-pris">' + pris +'</p></div></a>';
+  }
+
+  document.getElementById("forside-gavekurve").innerHTML = forsideEksempler;
+
+}
+
+
+udskrivGavekurve();
+
+
+
+
+
+
