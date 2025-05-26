@@ -675,7 +675,7 @@ ul.breadcrumb li {
   .tilfoejtilkurv {
     margin-top: 10px;
     padding: 15px;
-    width: 100%;
+    width: fit-content;
     background-color: #b55135;
     color: white;
     font-size: 16px;
@@ -1588,7 +1588,7 @@ h4 {
     .tilfoejtilkurv {
       margin-top: 10px;
       padding: 15px;
-      width: 100%;
+      width: fit-content;
       background-color: #b55135;
       color: white;
       font-size: 16px;
