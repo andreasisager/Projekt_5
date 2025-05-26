@@ -869,7 +869,8 @@ a{
 
 .produkt__billede img{
   width: 350px;
-  height: auto;
+  height: 437.5px;
+  object-fit: cover;
 }
 
 .produkt__navn{
