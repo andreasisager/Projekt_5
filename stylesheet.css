@@ -316,7 +316,7 @@ ul{
 
 /*====================HERO====================*/
 .hero{
-    width: 100%;    
+    width: 100%;
 }
 
 .hero-container {
@@ -1389,6 +1389,9 @@ h4 {
 
 
   /*====================HERO====================*/
+  .hero{
+    height: 90vh;
+}
   .hero-text {
           text-align: center;
   }
