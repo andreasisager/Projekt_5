@@ -223,12 +223,12 @@ ul{
 }
 
 /*====================GAVEKURV-SEKTION====================*/
-.storgavekurv{
+.forside-gavekurv{
     display: flex;
     flex-direction: column;
 }
 
-.storgavekurv a {
+.forside-gavekurv a {
   text-decoration: none;
 }
 
@@ -1305,7 +1305,7 @@ h4 {
   }
 
   /*====================GAVEKURV====================*/  /*------------pris og navn er byttet om på mobil og desktop ------------*/
-  .storgavekurv{
+  .forside-gavekurv{
       display: flex;
       flex-direction: row;
       margin: 0 1.5rem 3rem 1.5rem;
