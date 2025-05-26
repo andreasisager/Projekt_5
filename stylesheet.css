@@ -1087,6 +1087,33 @@ a{
 }
 
     
+/*====================Indkøbskurv====================*/
+
+.indkoebskurv-item {
+  border: solid 2px #000000;
+  padding: 20px;
+  margin: 20px;
+  max-width: 300px;
+}
+
+.indkoebskurv-item-navn {
+  font-weight: 600;
+}
+
+.indkoebskurv-item-tekst {
+  margin-top: 10px;
+}
+
+.indkoebskurv-billede img {
+  width: 100%;
+}
+
+.indkoebskurv-billede {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+
 
 /*====================MEDIA QUERY====================*/
 @media only screen and (min-width: 1024px){
