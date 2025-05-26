@@ -23,7 +23,7 @@ h1 {
 h2 {
   font-family: "Vollkorn";
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h3 {
@@ -202,117 +202,6 @@ ul{
   padding: 10px 0 10px 5px;
 }
 
-/*
-  .desktop-navbar {
-      display: initial;
-      display: flex;
-      flex-direction: row;
-      font-family: 'Nunito';
-      align-items: center;
-      width: inherit;
-  }
-
-
-  .header-menu {
-    display: flex;
-    justify-content: center;    
-  }
-
-  .header-icons {
-    display: flex;
-    margin-right: 20px;
-  }
-
-  .menu-item {
-    padding: 34px 20px;
-    color: #EBEBEB;
-    color: #FFFFFF;
-  }
-
-
-
-
-.menu-dropdown-gavekurve, .menu-dropdown-kunst-deli {
-  display: none;
-  position: absolute; 
-  background-color: #F0E5D7;
-  color: #000000;
-  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
-  padding: 30px;
-  top: 100%;
-  margin-left: -20px;
-} 
-
-
-.menu-item:hover .menu-dropdown-gavekurve {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-
-
-
-.dropdown-overskrift:hover, .dropdown-underlink:hover {
-  text-decoration: underline;
-}
-
-
-.kunsthåndværk-dropdown {
-  display: none;
-  position: absolute; 
-  background-color: #F0E5D7;
-  color: #000000;
-  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
-  padding: 30px;
-  
-  width: 100%;
-  left: 0;
-  top: 100%;
-  max-height: 0;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  z-index: 4;
-  opacity: 0;
-  transform: translateY(-100px);
-
-
-
-.menu-item:hover .kunsthåndværk-dropdown {
-  max-height: 500px;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#home-navbar:hover { 
-  background-color: #56715C;
-  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.5);
-}
-
-.menu-item:hover {
-  background-color: #67866e;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3) inset;
-  color: #F0E5D7;
-}
-
-
-.menu-item:hover .menu-dropdown-kunst-deli {
-  display: flex;
-}
-
-.kunst-deli-undermenu {
-  display: flex;
-  flex-direction: column;
-  width: 175px;
-}
-
-.fa-search, .fa-shopping-cart, .fa-bars {
-    padding: 10px;
-    margin: 10px;
-  }*/
-
-
 
 /*====================HERO====================*/
 .hero{
@@ -334,9 +223,13 @@ ul{
 }
 
 /*====================GAVEKURV-SEKTION====================*/
-.storgavekurv{
+.forside-gavekurv{
     display: flex;
     flex-direction: column;
+}
+
+.forside-gavekurv a {
+  text-decoration: none;
 }
 
 .gavekurveheading{
@@ -350,7 +243,7 @@ ul{
     background-color: #F0E5D7;
     padding: 1.5rem;
     text-align: center;
-    margin: auto;
+    margin: 0 auto 1.5rem auto;
 }
 
 .overskrift-gavekurve {
@@ -375,9 +268,13 @@ ul{
 }
 
 .gavekurv-pris {
-    font-weight: bold;
     font-size: 1.2rem; /*19.2px*/
     margin-top: 0.5rem;
+}
+
+.gavekurv-navn {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .divider-container {
@@ -594,7 +491,12 @@ ul{
 
   .samarbejdspartnere-logo {
     width: 100px;          
-    height: auto;
+  }
+
+
+  .samarbejdspartnere {
+    text-align: center;
+    margin-top: 2rem;
   }
 
   /*====================FOOTER====================*/
@@ -793,7 +695,7 @@ ul.breadcrumb li {
     padding: 1.5rem;
     font-family: "Vollkorn";
     text-align: left;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 50px;
   }
 
@@ -814,7 +716,7 @@ ul.breadcrumb li {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: center;
+    margin-left: 124px;
 }
 
 /*======================ACCORDION=====================*/
@@ -967,7 +869,8 @@ a{
 
 .produkt__billede img{
   width: 350px;
-  height: auto;
+  height: 437.5px;
+  object-fit: cover;
 }
 
 .produkt__navn{
@@ -1231,7 +1134,7 @@ h1 {
 h2 {
   font-family: "Vollkorn";
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h3 {
@@ -1402,9 +1305,10 @@ h4 {
   }
 
   /*====================GAVEKURV====================*/  /*------------pris og navn er byttet om på mobil og desktop ------------*/
-  .storgavekurv{
+  .forside-gavekurv{
       display: flex;
       flex-direction: row;
+      margin: 0 1.5rem 3rem 1.5rem;
   }
 
   .gavekurveheading{
@@ -1412,6 +1316,7 @@ h4 {
       flex-direction: column;
       justify-content: center;
   }
+  
   .gavekurv-sektion {
       width: 300px;
       background-color: #F0E5D7;
@@ -1423,40 +1328,33 @@ h4 {
 
   .gavekurv-billede {
       width: 100%;
-      height: auto;
       border-radius: 4px;
       margin-bottom: 1rem;
   }
 
   .overskrift-gavekurve {
-      font-size: 3rem; /*48px*/
-      font-weight: 800;
       margin: 0.2rem 0;
       display: flex;
       justify-content: center;
   }
 
   .underoverskrift-gavekurve {
-      color: #000000;
       margin-bottom: 1.5rem;
       display: flex;
       justify-content: center;
-      font-size: 2rem; /*32px*/
   }
 
   .gavekurv-navn {
-      font-weight: bold;
+      font-size: 1.3rem;
       margin: 0;
-      font-size: 1.5rem; /*24px*/
   }
-
 
   .gavekurv-pris {
-      font-weight:100;
-      font-family: "Vollkorn";
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin-top: 0.5rem;
   }
+
+
 
   /*====================PRODUKTSEKTION====================*/
   .produkt-sektion {
@@ -1556,6 +1454,11 @@ h4 {
   .divider-billede_lisbeth-index{
       width: 100%;
       height: auto;
+  }
+
+  .samarbejdspartnere {
+    text-align: center;
+    margin-top: 5rem;
   }
 
   /*====================KONTAKT-SIDE====================*/
@@ -1764,7 +1667,6 @@ h4 {
     .anbefaldedeprodukterpadding{
       padding-top: 20px;
       padding-bottom: 20px;
-      padding-left: 100px;
     }
   
   /*============ VINCENT ======================*/
