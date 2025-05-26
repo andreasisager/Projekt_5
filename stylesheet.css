@@ -587,7 +587,6 @@ ul{
 }
 ul.breadcrumb li {
     display: inline;
-    font-size: 10px;
     text-align: left;
   }
 
@@ -827,10 +826,6 @@ a{
   visibility: hidden;
 }
 
-.produktside{
-  padding-top: 100px;
-}
-
 .produktside__titel{
   font-family: "Vollkorn";
   font-size: 3rem;
@@ -1047,7 +1042,7 @@ a{
 
 .headline {
   text-align: center;
-  padding-top: 130px;
+  padding-top: 25px;
 }
 
 .kategorier {
@@ -1478,7 +1473,7 @@ h4 {
     }
 
     .headline {
-    padding-top: 160px;
+    padding-top: 25px;
     margin-bottom: 30px;
     }
 
