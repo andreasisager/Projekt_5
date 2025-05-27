@@ -31,6 +31,15 @@ function openGavekurv() {
   }
 }
 
+/*Når man klikker uden for burgermenuen og burgermenu-ikonet, så lukker burgermenuen*/
+const burgerMenu = document.getElementById("burgermenu-icon");
+
+window.addEventListener('click', function(klik) {
+  if (burger.style.display === "block" && !burger.contains(klik.target) && !burgerMenu.contains(klik.target)) {
+    burger.style.display = "none";  
+  }
+});
+
 
 /*Åbner kunsthåndværk og interiør-dropdown når man klikker på Kunsthåndværk og Interiør og tilføjer baggrundsfarve*/
 document.getElementById("burgermenu-item-kunst").addEventListener("click", openKunst)

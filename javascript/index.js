@@ -34,13 +34,18 @@ function openBurger() {
   }
 }
 
-/*Når man klikker uden for burgermenuen og burgermenu-ikonet, så lukker burgermenuen
+/*Når man klikker uden for burgermenuen og burgermenu-ikonet, så lukker burgermenuen, og hvis man er helt i toppen fjernes farven også*/
 window.addEventListener('click', function(klik) {
-  if (!burger.contains(klik.target) && !burgerMenu.contains(klik.target) && window.scrollY <= 50)
-      burger.style.display = "none";
-      nav.classList.add('farveskift');
-  
-});*/
+  if (burger.style.display === "block" && !burger.contains(klik.target) && !burgerMenu.contains(klik.target) && window.scrollY <= 50 && nav.classList.contains('farveskift')) {
+    nav.classList.remove('farveskift');
+    burger.style.display = "none";
+  }
+
+  else if (burger.style.display === "block" && !burger.contains(klik.target) && !burgerMenu.contains(klik.target) && window.scrollY > 50) {
+     burger.style.display = "none";
+     nav.classList.remove('farveskift');
+  }
+});
 
 
 /*Sørger for at navbaren får farve når burgermenuen åbnes på forsiden afhængigt af, om der er blevet scrollet*/
@@ -53,7 +58,7 @@ function skiftFarve() {
 
   else if (burger.style.display === "none" && window.scrollY <= 50) {
       nav.classList.remove('farveskift');
-      nav.classList.remove('transition')
+      nav.classList.remove('transition');
   }
 
   else {
