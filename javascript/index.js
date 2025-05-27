@@ -1,4 +1,4 @@
-/*Inspireret af...*/
+/*Inspireret af https://www.youtube.com/watch?v=axQ7eN2oPu0&list=LL&index=2 og ChatGPT*/
 /*Tilføjer baggrundsfarve til navbaren når man scroller på forsiden*/
 const nav = document.getElementById('home-navbar');
 const burger = document.getElementById("burgermenu-dropdown");
