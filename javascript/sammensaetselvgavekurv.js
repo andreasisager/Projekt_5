@@ -1,10 +1,14 @@
 /*---- taget i følgende en youtubeturtorial link: https://youtu.be/u_iQn0hvrac?si=eKq1WcjGOESwf9pJ ----*/
+
+/*- VISNING AF KURV -*/
 const kurv__ikon = document.querySelector("#kurv__ikon");
 const kurv = document.querySelector(".kurv");
 const luk__kurv = document.querySelector("#luk__kurv");
 kurv__ikon.addEventListener("click", () => kurv.classList.add("aktiv"));
 luk__kurv.addEventListener("click", () => kurv.classList.remove("aktiv"));
 
+
+/*- TILFØJER PRODUKTER TIL KURVEN -*/
 const tilfoej__gavekurv = document.querySelectorAll(".tilfoej__gavekurv");
 tilfoej__gavekurv.forEach(knap => {
     knap.addEventListener("click", event => {
@@ -13,6 +17,7 @@ tilfoej__gavekurv.forEach(knap => {
     });
 });
 
+/*- HTML ELEMENT FOR PRODUKTET I KURVEN -*/
 const kurv__indhold = document.querySelector(".kurv__indhold");
 const tilfoej__til__gavekurv = produkt__kort => {
     const produktbillede__soegning = produkt__kort.querySelector("img").src;
@@ -26,7 +31,7 @@ const tilfoej__til__gavekurv = produkt__kort => {
             return;
         }
     }
-/*------ indtil her ------*/
+
     const individuelle__produkt = document.createElement("div");
     individuelle__produkt.classList.add("individuelle__produkt");
     individuelle__produkt.innerHTML = `
@@ -45,6 +50,8 @@ const tilfoej__til__gavekurv = produkt__kort => {
     
     kurv__indhold.appendChild(individuelle__produkt);
 
+
+    /*- FJERNER PRODUKTET FRA KURVEN OG OPDATERER KURVTÆLLER OG TOTAL SUMMEN -*/
     individuelle__produkt.querySelector(".fjern__produkt").addEventListener("click", () => {
         individuelle__produkt.remove();
 
@@ -53,6 +60,7 @@ const tilfoej__til__gavekurv = produkt__kort => {
         opdater__i__alt__total();
     });
 
+    /*- PRODUKTANTAL OPDATERING INDE I KURVEN -*/
     individuelle__produkt.querySelector(".individuelle__produkttaeller").addEventListener("click", event => {
         const individuelle__produkttaeller__tal = individuelle__produkt.querySelector(".individuelle__produkttaeller__tal");
         const minus = individuelle__produkt.querySelector(".minus");
@@ -78,6 +86,8 @@ const tilfoej__til__gavekurv = produkt__kort => {
     opdater__i__alt__total();
 };
 
+
+/*- OPDATERE PRISEN I ALT -*/
 const opdater__i__alt__total = () => {
     const i__alt__total = document.querySelector(".i__alt__total");
     const individuelle__produkter = kurv__indhold.querySelectorAll(".individuelle__produkt");
@@ -92,6 +102,7 @@ const opdater__i__alt__total = () => {
     i__alt__total.textContent = `${i__alt} kr`;
 };
 
+/*- VISER ANTAL AF PRODUKTER TILFØJET TIL GAVEKURVEN -*/
 let kurv__produkt__taeller = 0;
 const opdater__kurv__indhold = change => {
     const opdater__kurv__indhold__banner = document.querySelector(".kurv__produkt__taeller");
@@ -105,6 +116,8 @@ const opdater__kurv__indhold = change => {
     }
 };
 
+
+/*- SIMULERE TILFØJELSE TIL KURV MED EN ALERT -*/
 const tilfoej__til__kurv = document.querySelector(".tilfoej__kurv")
 tilfoej__til__kurv.addEventListener("click", () => {
     const individuelle__produkter = kurv__indhold.querySelectorAll(".individuelle__produkt");
