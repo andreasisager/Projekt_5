@@ -100,12 +100,6 @@ nav a {
   display: block;
 }
 
-/*
-.mobile-nav li {
-    float: left;
-    display: block;
-}*/
-
 ul{
     list-style-type: none;
     margin: 0;
@@ -136,12 +130,12 @@ ul{
 }
 
 /*De følgende to styles er fra w3schools: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp*/
-/*Skjuler scrollbaren i Chrome, Safari og Opera*/
+/*Skjuler scrollbaren i burgermenu i Chrome, Safari og Opera*/
 .burgermenu .burgermenu-dropdown::-webkit-scrollbar {
     display: none;
 }
 
-/*Skjuler scrollbaren i IE, Edge og Firefox */
+/*Skjuler scrollbaren i burgermenu IE, Edge og Firefox */
 .burgermenu .burgermenu-dropdown {
   -ms-overflow-style: none;  /* IE og Edge */
   scrollbar-width: none;  /* Firefox */
@@ -206,11 +200,18 @@ ul{
 /*====================HERO====================*/
 .hero{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hero-container {
     position: relative;
     width: 100%;
+}
+
+.hero-billede-container {
+  overflow: hidden;
 }
 
 .hero-text {
@@ -1295,14 +1296,22 @@ h4 {
   .hero{
     height: 95vh;
 }
+
   .hero-text {
           text-align: center;
   }
 
-
   .hero-text h1 {
           font-size: 5rem;
   }
+
+  .kategori-image-container img {
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
   /*====================GAVEKURV====================*/  /*------------pris og navn er byttet om på mobil og desktop ------------*/
   .forside-gavekurv{
