@@ -120,5 +120,5 @@ tilfoej__til__kurv.addEventListener("click", () => {
 
     opdater__i__alt__total();
 
-    alert("Tak for dit køb")
+    alert("Din gavekurv er nu tilføjet til kurven")
 });
