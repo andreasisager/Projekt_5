@@ -1111,7 +1111,6 @@ a{
 }
 
 .indkoebskurv-billede {
-  height: 150px;
   width: 150px;
   overflow: hidden;
 }
@@ -1716,7 +1715,7 @@ h4 {
   border: solid 2px #000000;
   padding: 20px;
   margin: 20px;
-  max-width: 300px;
+  max-width: 3000px;
   display: flex;
 }
 
@@ -1726,22 +1725,24 @@ h4 {
 }
 
 .indkoebskurv-item-pris {
- margin-left: 100px;
+ margin-left: auto;
+ text-align: right;
+
 }
 
 .indkoebskurv-item-tekst {
   margin-top: 10px;
   padding: 10px;
+  margin-left: 100px;
 }
 
 .indkoebskurv-billede img {
   width: 100%;
-  height: 100%;
 }
 
 .indkoebskurv-billede {
-  height: 150px;
   width: 150px;
+  height: 200px;
   overflow: hidden;
 }
 
