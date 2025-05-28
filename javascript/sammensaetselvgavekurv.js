@@ -1,6 +1,6 @@
-/*---- taget i følgende en youtubeturtorial link: https://youtu.be/u_iQn0hvrac?si=eKq1WcjGOESwf9pJ ----*/
+/*---- taget inspiration fra følgende youtubeturtorial link: https://youtu.be/u_iQn0hvrac?si=eKq1WcjGOESwf9pJ ----*/
 
-/*- VISNING AF KURV -*/
+/*- VISNING AF KURV åbn/luk -*/
 const kurv__ikon = document.querySelector("#kurv__ikon");
 const kurv = document.querySelector(".kurv");
 const luk__kurv = document.querySelector("#luk__kurv");
@@ -9,7 +9,7 @@ luk__kurv.addEventListener("click", () => kurv.classList.remove("aktiv"));
 
 
 /*- TILFØJER PRODUKTER TIL KURVEN -*/
-const tilfoej__gavekurv = document.querySelectorAll(".tilfoej__gavekurv");
+const tilfoej__gavekurv = document.querySelectorAll(".tilfoej__gavekurv")
 tilfoej__gavekurv.forEach(knap => {
     knap.addEventListener("click", event => {
         const produkt__kort = event.target.closest(".produkt__kort");
