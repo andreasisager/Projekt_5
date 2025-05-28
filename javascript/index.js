@@ -20,7 +20,6 @@ window.addEventListener('scroll', function() {
 
 /*Åbner burgermenuen når man klikker på burgermenu-ikonet og tilføjer baggrundsfarve*/
 document.getElementById("burgermenu-icon").addEventListener("click", openBurger)
-const burgerMenu = document.getElementById("burgermenu-icon");
 
 function openBurger() {
   if (burger.style.display === "block") {
@@ -33,6 +32,7 @@ function openBurger() {
 }
 
 /*Når man klikker uden for burgermenuen og burgermenu-ikonet, så lukker burgermenuen, og hvis man er helt i toppen fjernes farven også*/
+const burgerMenu = document.getElementById("burgermenu-icon");
 window.addEventListener('click', function(klik) {
   if (burger.style.display === "block" && !burger.contains(klik.target) && !burgerMenu.contains(klik.target) && window.scrollY <= 50 && nav.classList.contains('farveskift')) {
     nav.classList.remove('farveskift');
