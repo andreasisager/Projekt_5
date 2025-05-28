@@ -772,32 +772,10 @@ ul.breadcrumb li {
   padding: 158.5px;
 }
 /*==================== VINCENT ====================*/
-
-.webshop__kurv__produkt__taeller{
-  position: absolute;
-  font-family: 'Nunito';
-  top: 10px;
-  right: 20px;
-  width: 30px;
-  height: 30px;
-  background: #c4492c;
-  border-radius: 15px;
-  font-size: 1.5rem;
-  color: beige;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 6;
-  visibility: hidden;
-}
-
-
-
+/*============= BYG SELV GAVEKURV =============*/
 a{
   color: #000;
 }
-
-/*============= BYG SELV GAVEKURV =============*/
 
 #kurv__ikon {
   position: fixed;
@@ -1036,7 +1014,6 @@ a{
   top: 15px;
   right: 10px;
 }
-
 
 
 /*====================Undersider Kategorier====================*/

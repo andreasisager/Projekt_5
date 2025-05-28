@@ -6,10 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    $("#sammensaetselvgavekurv").load("sammensetselvgavekurv.html");
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     $("#slideshow").load("slideshow.html");
 });
 
