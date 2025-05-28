@@ -1442,14 +1442,14 @@ h4 {
   /*====================NYHEDSBREV====================*/
  
   .nyhedsbrev-text {
-      padding: 5rem;
+      padding: 8rem;
     }
 
   /*====================OM-OSSEKTION====================*/
   .omossektion{
       display: flex;
       flex-direction: row;
-    
+      margin: 5rem;
   }
 
   .omossektion_tekst{
@@ -1471,8 +1471,8 @@ h4 {
       margin: 0;
       display: flex;
       flex-direction: column;
-      align-items: left;
-      justify-content: left;
+      align-items: center;
+      justify-content: center;
   }
 
   .divider-billede_lisbeth{
