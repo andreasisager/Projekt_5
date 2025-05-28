@@ -25,12 +25,10 @@ const burgerMenu = document.getElementById("burgermenu-icon");
 function openBurger() {
   if (burger.style.display === "block") {
     burger.style.display = "none";
-    /*burgerMenu.classList.remove('burgermenu-item-aktiv');*/
   } 
 
   else {
     burger.style.display = "block";
-    /*burgerMenu.classList.add('burgermenu-item-aktiv');*/
   }
 }
 
