@@ -15,5 +15,3 @@ function visBilleder(n) {
   }
   slides[slideIndex-1].style.display = "block";  
 }
-
-//Kode til slideshow har taget inspiration i følgende kilde: https://www.w3schools.com/howto/howto_js_slideshow.asp
