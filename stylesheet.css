@@ -576,6 +576,7 @@ ul{
   padding-top: 120px;
   padding-bottom: 20px;
   width: auto;
+  font-family: 'vollkorn';
 }
 ul.breadcrumb li {
     display: inline;
@@ -594,7 +595,7 @@ ul.breadcrumb li {
   }
   
   ul.breadcrumb li a:hover {
-    color: #ffffff;
+    color: #ebebeb;
   }
 
   .underoverskrift-specifikprodukt {
@@ -1509,7 +1510,6 @@ h4 {
 
     ul.breadcrumb li {
       display: inline;
-      font-size: 15px;
     }
 
     ul.breadcrumb li+li:before {
