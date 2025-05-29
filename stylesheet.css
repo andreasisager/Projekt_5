@@ -259,7 +259,6 @@ ul{
 .gavekurv-billede {
     width: 100%;
     height: auto;
-    border-radius: 4px;
     margin-bottom: 1rem;
     max-width: fit-content;
 }
@@ -350,7 +349,6 @@ ul{
   object-fit: contain;
   width: 100%;
   height: auto;
-  border-radius: 4px;
 }
 
 .produkt-sektion-knap{
@@ -445,6 +443,13 @@ ul{
 .omossektion_tekst{
     padding: 3em;
 }
+
+.omos-billede {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    max-width: 500px;
+  } 
 
 .overskrift-omos {
     font-size: 1.8rem;
@@ -619,7 +624,6 @@ ul.breadcrumb li {
   .produkt-billede {
     width: 100%;
     height: 100%;
-    border-radius: 4px;
     margin-bottom: 1rem;
 }
   
@@ -746,16 +750,17 @@ ul.breadcrumb li {
 
 /*====================KONTAKT-SIDE====================*/
   .kontakt-billede {
-    width: 300px;
-    height: 300px;
-    border-radius: 4px;
+    width: 100%;
+    height: auto;
     margin-bottom: 1rem;
+    max-width: 500px;
   }
 
 .page-wrapper-ekstra-margin {
   display: flex;
   flex-direction: column;
-  padding: 158.5px;
+  padding: 20px;
+  padding-top: 100px;
 }
 
 /*==================== VINCENT ====================*/
@@ -1309,7 +1314,6 @@ h4 {
 
   .gavekurv-billede {
       width: 100%;
-      border-radius: 4px;
       margin-bottom: 1rem;
   }
 
@@ -1412,9 +1416,8 @@ h4 {
   }
 
   .omos-billede {
-    width: 50%;
+    width: 100%;
     height: auto;
-    border-radius: 4px;
     margin-bottom: 1rem;
   } 
 
@@ -1445,15 +1448,16 @@ h4 {
 
   /*====================KONTAKT-SIDE====================*/
   .kontakt-billede {
-    width: 50%;
+    width: 100%;
     height: auto;
-    border-radius: 4px;
     margin-bottom: 1rem;
   } 
 
   .page-wrapper-ekstra-margin {
     display: flex;
     flex-direction: row;
+    padding: 100px;
+    padding-top: 160px;
   }
     /*====================FOOTER====================*/
     .footer {
@@ -1550,9 +1554,8 @@ h4 {
     .produkt-billede {
       width: 25%;
       height: auto;
-      border-radius: 4px;
       margin-bottom: 1rem;
-      padding-left: 100px;
+      margin-left: 100px;
     } 
 
     .paddingbetween{
