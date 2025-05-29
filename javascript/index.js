@@ -20,21 +20,19 @@ window.addEventListener('scroll', function() {
 
 /*Åbner burgermenuen når man klikker på burgermenu-ikonet og tilføjer baggrundsfarve*/
 document.getElementById("burgermenu-icon").addEventListener("click", openBurger)
-const burgerMenu = document.getElementById("burgermenu-icon");
 
 function openBurger() {
   if (burger.style.display === "block") {
     burger.style.display = "none";
-    /*burgerMenu.classList.remove('burgermenu-item-aktiv');*/
   } 
 
   else {
     burger.style.display = "block";
-    /*burgerMenu.classList.add('burgermenu-item-aktiv');*/
   }
 }
 
 /*Når man klikker uden for burgermenuen og burgermenu-ikonet, så lukker burgermenuen, og hvis man er helt i toppen fjernes farven også*/
+const burgerMenu = document.getElementById("burgermenu-icon");
 window.addEventListener('click', function(klik) {
   if (burger.style.display === "block" && !burger.contains(klik.target) && !burgerMenu.contains(klik.target) && window.scrollY <= 50 && nav.classList.contains('farveskift')) {
     nav.classList.remove('farveskift');
@@ -137,35 +135,3 @@ function udskrivGavekurve() {
 }
 
 udskrivGavekurve();
-
-
-/*
-<a href="jubilaeumsgavekurven_webshop.html" class="gavekurv-sektion">
-    <img class="gavekurv-billede" src="images/jubilaeumsgavekurv.webp" alt="Jubilæumsgavekurv">
-    <div class="produkt-information">
-        <p class="gavekurv-navn">Jubilæumsgavekurv</p>
-        <p class="gavekurv-pris">399 kr.</p>
-    </div>
-</a>
-
-<a href="foedselsdagsgavekurven_webshop.html" class="gavekurv-sektion">
-    <img class="gavekurv-billede" src="images/foedselsdagsgavekurv.webp" alt="Fødselsdagsgavekurv">
-    <div class="produkt-information">
-        <p class="gavekurv-navn">Fødselsdagsgavekurv</p>
-        <p class="gavekurv-pris">299 kr.</p>
-    </div>
-</a>
-
-<a href="firmagavekurven_webshop.html" class="gavekurv-sektion">
-    <img class="gavekurv-billede" src="images/firmagavekurv.webp" alt="Jubilæumsgavekurv">
-    <div class="produkt-information">
-        <p class="gavekurv-navn">Firmagavekurv</p>
-        <p class="gavekurv-pris">249 kr.</p>
-    </div>
-</a>*/
-
-
-
-
-
-

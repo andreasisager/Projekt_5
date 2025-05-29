@@ -12,3 +12,5 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+//Kode til slideshow har taget inspiration i følgende kilde: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion 
